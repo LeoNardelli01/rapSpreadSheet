@@ -2,9 +2,6 @@
 $(function(){
 
     var btnEmpezar = $("#empezar");
-
-
-
     btnEmpezar.click(function(e){
 
         var rapper1 = $("#r1").val();

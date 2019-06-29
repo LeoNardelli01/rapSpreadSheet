@@ -5,13 +5,13 @@ $(function(){
   $("#rap1").html(player1);
   $("#rap2").html(player2);
 
-  let totalP1;
+  let totalEasyMode1;
   let totalPatronesP1;
   let tecnicasP1;
   let flowP1;
   let escenaP1;
 
-  let totalP2;
+  let totaEasyMode2;
   let totalPatronesP2;
   let tecnicasP2;
   let flowP2;
@@ -31,6 +31,8 @@ $(function(){
     tecnicasp1 = parseInt($(".tecnicasp1").val());
     flowp1 = parseInt($(".flowp1").val());
     escenap1 = parseInt($(".escenap1").val());
+    totalEasyMode1 = totalPatronesP1+tecnicasp1+flowp1+escenap1;
+
 
     //variables del jugador 2
 
@@ -45,18 +47,25 @@ $(function(){
     tecnicasp2 = parseInt($(".tecnicasp2").val());
     flowp2 = parseInt($(".flowp2").val());
     escenap2 = parseInt($(".escenap2").val());
-    totalP1 = totalPatronesP1+tecnicasp1+flowp1+escenap1;
+    totalEasyMode2 = totalPatronesP2+tecnicasp2+flowp2+escenap2;
 
-    localStorage.setItem('totalPatronesP1', totalPatronesP1 );
-    localStorage.setItem('tecnicasp1', tecnicasp1);
-    localStorage.setItem('flowp1', flowp1);
-    localStorage.setItem('escenap2', escenap1);
-    localStorage.setItem('totalP1', totalP1);
+    //---- Seteo de localStorage
+    //variables jugador 2
+    localStorage.setItem('em_totalPatronesP2', totalPatronesP2);
+    localStorage.setItem('em_tecnicasp2', tecnicasp2);
+    localStorage.setItem('em_flowp2', flowp2);
+    localStorage.setItem('em_escenap2', escenap2);
+    localStorage.setItem('em_totalEasyMode2', totalEasyMode2);
 
 
 
 
-
+    //variables jugador 1
+    localStorage.setItem('em_totalPatronesP1', totalPatronesP1 );
+    localStorage.setItem('em_tecnicasp1', tecnicasp1);
+    localStorage.setItem('em_flowp1', flowp1);
+    localStorage.setItem('em_escenap1', escenap1);
+    localStorage.setItem('em_totalEasyMode1', totalEasyMode1);
 
 
 
