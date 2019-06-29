@@ -5,5 +5,35 @@
 }
 
 .rapper1{
+  width: 50vw;
+  background-color: rgb(199, 17, 17);
+  height: 65vh;
+
+}
+
+.rapper2{
+  width: 50vw;
+  background-color: rgb(46, 0, 242);
+  height: 65vh;
+
+}
+
+select{
+  background-color: black;
+  color: white;
+  text-align-last: center;
+  width: 90px;
+  height: 70px;
+  font-size: 50px;
+}
+
+.final{
+  width: auto;
+  height: auto;
+  background-color: rgb(134, 118, 121);
+}
+
+.tecnicas{
+  display: flex;
 
 }
