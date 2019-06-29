@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.container-fluid {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  padding: 0 !important;
+}
+
+header{
+  width: 100vw;
+  height: 20vh;
+  background-color: rgb(227, 114, 9);
+}
+.logo img{
+  width: 80px;
+
+}
+
+.players{
+  width: 100vw;
+  height: 80vh;
+  background-color: rgb(66, 66, 66);
+}
+
+.players input {
+  margin-top: 20px;
+}

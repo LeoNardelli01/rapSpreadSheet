@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rappers{
+  overflow: hidden;
+}
+.r1{
+  float: left;
+}
+.r2{
+ float: right;
+}
+
+.menu {
+
+}
+.menu .tema{
+  width: 50vw!important;
+  margin-top: 20px;
+
+}
+
+.logo img{
+  width: 80px;
+}
+
+.terminarBatalla{
+  margin-top: 30px;
+}
