@@ -12,7 +12,15 @@ $(function(){
 
     $("#player2").html(player2);
     $("#res2").html(totalP2)
-    
+
+    html2canvas(document.body, {
+      onrendered (canvas) {
+        var link = document.getElementById('download');;
+        var image = canvas.toDataURL();
+        link.href = image;
+        link.download = player1 + '(' + totalP1 + ')' + ' vs ' + player2 + '(' + totalP2 + ')' + '.png';
+  }
+ });
     $("#nuevaBatalla").click(function(e){
       var r = confirm("Estas seguro?\n");
 
