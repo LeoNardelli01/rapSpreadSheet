@@ -51,7 +51,7 @@
 }
 
 .terminarBatalla{
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   max-width: 80%;
   margin-left: 10%;
 
@@ -61,4 +61,8 @@
   font-family: 'Russo One', sans-serif;
   font-size: 25px;
 
+}
+
+.btn-outline-danger:active {
+  background-color: green;
 }
