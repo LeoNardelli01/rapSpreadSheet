@@ -1,6 +1,7 @@
 
 $(function(){
 
+
     var btnEmpezar = $("#empezar");
 
     btnEmpezar.click(function(e){
@@ -20,5 +21,5 @@ $(function(){
         }
     });
 
-    Barba.pjax.start();
+
 })
