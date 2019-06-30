@@ -12,9 +12,9 @@ $(function(){
 
     $("#player2").html(player2);
     $("#res2").html(totalP2)
-
+    
     $("#nuevaBatalla").click(function(e){
-      var r = confirm("Estas seguro?");
+      var r = confirm("Estas seguro?\n");
 
       if (r) {
         localStorage.clear();
