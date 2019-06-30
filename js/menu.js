@@ -7,9 +7,11 @@ $(function(){
 
   if (localStorage.getItem('em_totalEasyMode1') === null) {
     $("#easyMode").css('background-color', 'rgba(145, 145, 145, 0.51)');//gris
+
   }else{
     $("#easyMode").css('background-color', "rgba(17, 213, 78, 0.39)");//verde
+    $("#easyMode").css('box-shadow', '0px 0px 20px green')
   }
 
-  
+
 })
