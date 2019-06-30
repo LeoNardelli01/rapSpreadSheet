@@ -5,7 +5,11 @@ $(function(){
   $("#nombre1").html(player1);
   $("#nombre2").html(player2);
 
-  if (!localStorage.getItem('totalEasyMode1') === null) {
-    $("#easyMode").css('background-color', "rgba(17, 213, 78, 0.39)");
+  if (localStorage.getItem('em_totalEasyMode1') === null) {
+    $("#easyMode").css('background-color', 'rgba(145, 145, 145, 0.51)');//gris
+  }else{
+    $("#easyMode").css('background-color', "rgba(17, 213, 78, 0.39)");//verde
   }
+
+  
 })
