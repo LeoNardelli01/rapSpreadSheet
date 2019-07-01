@@ -22,6 +22,7 @@ header{
 }
 
 .players{
+  padding-top: 15px;
   width: 100vw;
   height: 80vh;
   background-image: linear-gradient(to top, blue , white);
@@ -84,6 +85,7 @@ h1{
 #typedJS {
   font-family: 'Play', sans-serif;
   font-size: 20px;
+
 }
 
 #contacto{
