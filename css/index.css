@@ -71,11 +71,22 @@ header{
   border-color: blue;
   box-shadow: 7px 4px 20px blue;
   color: white;
+  font-family: 'Play', sans-serif;
 }
 
 h1{
   font-family: 'Faster One', cursive;
-  padding-top: 20px;
+  padding-top: 25px;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+/* typed.js*/
+#typedJS {
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+}
+
+#contacto{
+  font-family: 'Play', sans-serif;
+  font-size: 18px;
 }

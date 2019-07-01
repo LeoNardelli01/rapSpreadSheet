@@ -41,7 +41,7 @@ $(function(){
       $("#ganador").html("GANO " + player2);
     } else{
       $("#ganador").html("EMPATE!");
-      var btn_replica = "<a id='replica' class='btn btn-warning btn-lg btn-block' href='replica.html'>IR A REPLICA</a>";
+      var btn_replica = "<a id='replica' class='btn btn-danger btn-lg btn-block' href='replica.html'>Empezar Replica</a>";
       $("#replica").append(btn_replica);
     }
 
@@ -61,7 +61,7 @@ $(function(){
 
 
     $("#nuevaBatalla").click(function(e){
-      var r = confirm("Estas seguro?\n");
+      var r = confirm("¿Estás Seguro?\n");
 
       if (r) {
         localStorage.clear();
