@@ -24,7 +24,7 @@ $(function(){
   //TYPED JS
   var options = {
     strings: ["<h3>Puntúa tus batallas</h3>", "<h3>Conviértete en jurado</h3>","<h3>Juega con tus amigos</h3>", "<h3>¿Están Listos?</h3>" ],
-    typeSpeed: 70
+    typeSpeed: 75
   }
   var typed = new Typed(".typed", options);
 

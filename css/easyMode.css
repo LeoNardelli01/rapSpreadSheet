@@ -9,6 +9,10 @@
   padding-right: 0px !important;
 }
 
+header a{
+  margin: 10px;
+}
+
 .titulo {
   font-family: 'Russo One', sans-serif;
   font-size: 50px;
@@ -41,8 +45,9 @@
 }
 
 select{
-  background-color: grey;
+  background-color: black;
   color: white;
+  font-family: 'play', sans-serif !important;
   text-align-last: center;
   width: 55px;
   height: 38px;
@@ -64,10 +69,12 @@ select{
 .final{
   width: auto;
   height: auto;
-  background-color: rgba(68, 25, 242, 0.51);
+  padding-bottom: 20px;
+  background-image: linear-gradient(to top, blue , white);
 }
 
 .final select{
+
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -76,12 +83,15 @@ select{
   display: flex;
   padding-left: 5%;
   padding-right: 5%;
+  font-family: 'Russo One', sans-serif;
 }
 
 #volverMenu {
   margin-top: 20px;
   max-width: 70%;
+  margin-bottom: 20px;
   position: relative;
   left: 50%;
   transform: translate(-50%);
+  font-family: 'Russo One', sans-serif;
 }
