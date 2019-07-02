@@ -21,12 +21,12 @@ $(function(){
         }
     });
 
-    var options = {
-  strings: ["<h3>Puntua tus batallas</h3>", "<h3>Competencias</h3>","<h3>Juega con tus amigos</h3>", "<h3>¿Están Listos?</h3>" ],
-  typeSpeed: 70
-}
-
-var typed = new Typed(".typed", options);
+  //TYPED JS
+  var options = {
+    strings: ["<h3>Puntúa tus batallas</h3>", "<h3>Conviértete en jurado</h3>","<h3>Juega con tus amigos</h3>", "<h3>¿Están Listos?</h3>" ],
+    typeSpeed: 70
+  }
+  var typed = new Typed(".typed", options);
 
 
 })

@@ -41,7 +41,7 @@ $(function(){
       flowp1 = parseInt($(".flowp1").val());
       escenap1 = parseInt($(".escenap1").val());
       //-------------------
-      totalEasyMode1 = totalPatronesP1+tecnicasp1+flowp1+escenap1;
+      totalHardMode1 = totalPatronesP1+tecnicasp1+flowp1+escenap1;
 
 
       //variables del jugador 2
@@ -59,25 +59,26 @@ $(function(){
       flowp2 = parseInt($(".flowp2").val());
       escenap2 = parseInt($(".escenap2").val());
       //-----
-      totalEasyMode2 = totalPatronesP2+tecnicasp2+flowp2+escenap2;
+      totalHardMode2 = totalPatronesP2+tecnicasp2+flowp2+escenap2;
 
 
         //---- Seteo de localStorage
         //variables jugador 2
-        localStorage.setItem('em_totalPatronesP2', totalPatronesP2);
-        localStorage.setItem('em_tecnicasp2', tecnicasp2);
-        localStorage.setItem('em_flowp2', flowp2);
-        localStorage.setItem('em_escenap2', escenap2);
-        localStorage.setItem('em_totalEasyMode2', totalEasyMode2);
+        localStorage.setItem('hm_totalPatronesP2', totalPatronesP2);
+        localStorage.setItem('hm_tecnicasp2', tecnicasp2);
+        localStorage.setItem('hm_flowp2', flowp2);
+        localStorage.setItem('hm_escenap2', escenap2);
+        localStorage.setItem('hm_totalHardMode2', totalHardMode2);
 
         //variables jugador 1
-        localStorage.setItem('em_totalPatronesP1', totalPatronesP1 );
-        localStorage.setItem('em_tecnicasp1', tecnicasp1);
-        localStorage.setItem('em_flowp1', flowp1);
-        localStorage.setItem('em_escenap1', escenap1);
-        localStorage.setItem('em_totalEasyMode1', totalEasyMode1);
+        localStorage.setItem('hm_totalPatronesP1', totalPatronesP1 );
+        localStorage.setItem('hm_tecnicasp1', tecnicasp1);
+        localStorage.setItem('hm_flowp1', flowp1);
+        localStorage.setItem('hm_escenap1', escenap1);
+        localStorage.setItem('hm_totalHardMode1', totalHardMode1);
 
     }
 
   });
-})
+
+});

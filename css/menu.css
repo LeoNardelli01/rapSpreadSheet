@@ -15,14 +15,14 @@
 .r1{
   float: left;
   font-size: 25px;
-  font-family: 'Kavoon', cursive;
+  font-family: 'Russo One', sans-serif;
   color: white;
   text-shadow: 0px 0px 15px blue;
 }
 .r2{
  float: right;
  font-size: 25px;
- font-family: 'Kavoon', cursive;
+ font-family: 'Russo One', sans-serif;
  color: white;
  text-shadow: 0px 0px 15px red;
 }
