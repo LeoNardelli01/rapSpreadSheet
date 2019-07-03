@@ -5,7 +5,8 @@ $(function(){
   let terminados = 0;
   let totalEasyMode1 = localStorage.getItem('em_totalEasyMode1');
   let totalEasyMode2 = localStorage.getItem('em_totalEasyMode2');
-
+  let suma1;
+  let suma2;
   //btn easy mode verde o gris
 if (localStorage.getItem('em_totalEasyMode1') === null) {
     $("#easyMode").css('background-color', 'rgba(145, 145, 145, 0.51)');//gris
@@ -44,6 +45,7 @@ if (localStorage.getItem('em_totalEasyMode1') === null) {
       $("#easyMode").removeClass("disabled");
       $("#nombre1").html(player1);
       $("#nombre2").html(player2);
+
       break;
 
       case 1:  // EASY MODE TERMINADO
@@ -68,12 +70,14 @@ if (localStorage.getItem('em_totalEasyMode1') === null) {
       }
       var typed = new Typed(".typed", options);
       $("#tematicas").removeClass("disabled");
-      localStorage.setItem('hm_completado', terminados);
-      var easyMasHard1 = parseInt(localStorage.getItem('em_totalEasyMode1')) + parseInt(localStorage.getItem('hm_totalHardMode1'));
-      var easyMasHard2 = parseInt(localStorage.getItem('em_totalEasyMode1')) + parseInt(localStorage.getItem('hm_totalHardMode2'));
 
-      $("#nombre1").html(player1 + " " + easyMasHard1);
-      $("#nombre2").html(easyMasHard2 + " " + player2);
+
+      localStorage.setItem('hm_completado', terminados);
+      suma1 = parseInt(localStorage.getItem('em_totalEasyMode1')) + parseInt(localStorage.getItem('hm_totalHardMode1'));
+      suma2 = parseInt(localStorage.getItem('em_totalEasyMode1')) + parseInt(localStorage.getItem('hm_totalHardMode2'));
+
+      $("#nombre1").html(player1 + " " + suma1);
+      $("#nombre2").html(suma2 + " " + player2);
       //activar termianr batalla
       $("#btn-terminarBatalla").removeClass("disabled");
 
