@@ -27,3 +27,9 @@ h3{
   background-color: rgba(224, 222, 6, 0.64);
   border-radius: 0px 0px 20px 20px;;
 }
+
+.easyMode {
+  font-family: 'Russo One', sans-serif;
+  font-size: 20px;
+  color: black;
+}

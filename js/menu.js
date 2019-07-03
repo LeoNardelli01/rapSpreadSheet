@@ -35,13 +35,13 @@ if (localStorage.getItem('em_totalEasyMode1') === null) {
 
 
   switch (terminados) {
-    case 0:
+    case 0:      //ARRANCA EL MENU
       var options = {
         strings: ["<h4>Bienvenido a RAP SpreaDSheeT</h4>", "<h4>Formato FMS</h4>","<h4>Buena Suerte " + player1 + " y " + player2 + "" + "</h4>", "<h4>3...2...1... TIEMPO</h4>", "<h4></h4>" ],
-        typeSpeed: 75
+        typeSpeed: 70
       }
       var typed = new Typed(".typed", options);
-      //--- End Typed----
+
       $("#easyMode").removeClass("disabled");
       $("#nombre1").html(player1);
       $("#nombre2").html(player2);
@@ -51,11 +51,11 @@ if (localStorage.getItem('em_totalEasyMode1') === null) {
       case 1:  // EASY MODE TERMINADO
 
       var options = {
-        strings: ["<h4>Easy Mode Terminado</h4>", "<h4>" + localStorage.getItem('em_totalEasyMode1') + " Para " + player1 +"</h4>","<h4>" + localStorage.getItem('em_totalEasyMode2') + " Para " + player2 +"</h4>", "<h4>Preparate para el Hard Mode</h4>", "<h4></h4>" ],
-        typeSpeed: 80
+        strings: ["<h4>Easy Mode Terminado</h4>", "<h4>" + localStorage.getItem('em_totalEasyMode1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('em_totalEasyMode2') + " Pts Para " + player2 +"</h4>", "<h4>Preparate para el Hard Mode</h4>", "<h4></h4>" ],
+        typeSpeed: 70
       }
       var typed = new Typed(".typed", options);
-      //--- End Typed----
+
       $("#hardMode").removeClass("disabled");
       $("#nombre1").html(player1 + " " + totalEasyMode1);
       $("#nombre2").html(totalEasyMode2 + " " + player2);
@@ -65,8 +65,8 @@ if (localStorage.getItem('em_totalEasyMode1') === null) {
 
       case 2:  // HARD MODE TERMINADO
       var options = {
-        strings: ["<h4>Hard Mode Terminado</h4>", "<h4>" + localStorage.getItem('hm_totalHardMode1') + " Para " + player1 +"</h4>","<h4>" + localStorage.getItem('hm_totalHardMode2') + " Para " + player2 +"</h4>", "<h4>Preparate para Temáticas</h4>", "<h4></h4>" ],
-        typeSpeed: 80
+        strings: ["<h4>Hard Mode Terminado</h4>", "<h4>" + localStorage.getItem('hm_totalHardMode1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('hm_totalHardMode2') + " Pts Para " + player2 +"</h4>", "<h4>Preparate para Temáticas</h4>", "<h4></h4>" ],
+        typeSpeed: 70
       }
       var typed = new Typed(".typed", options);
       $("#tematicas").removeClass("disabled");
@@ -76,8 +76,10 @@ if (localStorage.getItem('em_totalEasyMode1') === null) {
       suma1 = parseInt(localStorage.getItem('em_totalEasyMode1')) + parseInt(localStorage.getItem('hm_totalHardMode1'));
       suma2 = parseInt(localStorage.getItem('em_totalEasyMode1')) + parseInt(localStorage.getItem('hm_totalHardMode2'));
 
-      $("#nombre1").html(player1 + " " + suma1);
-      $("#nombre2").html(suma2 + " " + player2);
+      $("#nombre1").html(player1);
+      $("#resP1").html(suma1);
+      $("#nombre2").html(player2);
+      $("#resP2").html(suma2);
       //activar termianr batalla
       $("#btn-terminarBatalla").removeClass("disabled");
 
