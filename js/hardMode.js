@@ -5,13 +5,13 @@ $(function(){
   $("#rap1").html(player1);
   $("#rap2").html(player2);
 
-  let totalEasyMode1;
+  let totalHardMode1;
   let totalPatronesP1;
   let tecnicasP1;
   let flowP1;
   let escenaP1;
 
-  let totaEasyMode2;
+  let totaHardMode2;
   let totalPatronesP2;
   let tecnicasP2;
   let flowP2;

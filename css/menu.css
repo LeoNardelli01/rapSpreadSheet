@@ -71,5 +71,11 @@
 #typedJS {
   font-family: 'play', sans-serif;
   font-size: 16px;
+}
+
+
+#easyMode, #hardMode, #tematicas,
+#personajes, #libre, #deluxe {
+  background-color: rgba(145, 145, 145, 0.51);
 
 }
