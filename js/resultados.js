@@ -59,6 +59,8 @@ $(function(){
     $("#hm_resEscenaP2").html(hm_escenap2);
     $("#hm_totalP2").html(hm_totalP2);
 
+    
+
     var resFinalesP1 = parseInt(em_totalP1) + parseInt(hm_totalP1);
     var resFinalesP2 = parseInt(em_totalP2) + parseInt(hm_totalP2);
 

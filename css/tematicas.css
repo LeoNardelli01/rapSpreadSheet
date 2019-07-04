@@ -8,17 +8,15 @@
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-
+header {
+  padding: 5px;
+}
 .titulo {
   font-family: 'Russo One', sans-serif;
   font-size: 50px;
   color: black;
 }
 .rapper1{
-  width: 50vw;
-
-  height: 60vh;
-
 
 }
 #rap1{
@@ -29,13 +27,11 @@
 }
 
 .rapper2{
-  width: 50vw;
 
-  height: 60vh;
 }
 #rap2{
   font-size: 30px;
-  font-family: 'Russo One', sans-serif;
+font-family: 'Russo One', sans-serif;
   color: white;
   text-shadow: 0px 0px 12px red;
 }
@@ -53,12 +49,20 @@ select{
 
 
 }
+.segundaRonda {
+  padding-top: 100px;
+}
+
+#pSegundaRonda{
+  z-index: 1;
+  background-color: white;
+
+}
 .escenario select{
-  margin-top: 20px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 15px;
+position: relative;
+left:50%;
+transform: translate(-50%);
 
 }
 .final{
@@ -79,7 +83,7 @@ select{
 }
 
 #volverMenu {
-  margin-top: 20px;
+
   max-width: 70%;
   position: relative;
   left: 50%;

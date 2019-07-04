@@ -3,34 +3,35 @@ $(function(){
   let player1 = localStorage.getItem('rap1');
   let player2 = localStorage.getItem('rap2');
   let terminados = 0;
-  let totalEasyMode1 = localStorage.getItem('em_totalEasyMode1');
-  let totalEasyMode2 = localStorage.getItem('em_totalEasyMode2');
-  let suma1;
-  let suma2;
-  //btn easy mode verde o gris
-if (localStorage.getItem('em_totalEasyMode1') === null) {
-    $("#easyMode").css('background-color', 'rgba(145, 145, 145, 0.51)');//gris
+  let resFinalesP1 = 0;
+  let resFinalesP2 = 0;
 
-  }else{
-    $("#easyMode").css('background-color', "rgba(17, 213, 78, 0.39)");//verde
-    $("#easyMode").css('box-shadow', '0px 0px 15px green');
+        //btn easy mode verde o gris
+        if (localStorage.getItem('em_totalEasyMode1') === null) {
+            $("#easyMode").css('background-color', 'rgba(145, 145, 145, 0.51)');//gris
 
-    terminados += 1;
-    localStorage.setItem('em_completado', terminados);
-  }
+          }else{
+            $("#easyMode").css('background-color', "rgba(17, 213, 78, 0.39)");//verde
+            $("#easyMode").css('box-shadow', '0px 0px 15px green');
+            resFinalesP1 += parseInt(localStorage.getItem('em_totalEasyMode1'));
+            resFinalesP2 += parseInt(localStorage.getItem('em_totalEasyMode2'));
 
-  // btn hard mode verde o gris
-  if (localStorage.getItem('hm_totalHardMode1') === null) {
-    $("#hardMode").css('background-color', 'rgba(145, 145, 145, 0.51)');//gris
+            terminados += 1;
+          }
 
-  }else{
-    $("#hardMode").css('background-color', "rgba(17, 213, 78, 0.39)");//verde
-    $("#hardMode").css('box-shadow', '0px 0px 15px green');
+          // btn hard mode verde o gris
+          if (localStorage.getItem('hm_totalHardMode1') === null) {
+            $("#hardMode").css('background-color', 'rgba(145, 145, 145, 0.51)');//gris
 
-    terminados += 1;
+          }else{
+            $("#hardMode").css('background-color', "rgba(17, 213, 78, 0.39)");//verde
+            $("#hardMode").css('box-shadow', '0px 0px 15px green');
+            resFinalesP1 += parseInt(localStorage.getItem('hm_totalHardMode1'));
+            resFinalesP2 += parseInt(localStorage.getItem('hm_totalHardMode2'));
 
-  }
-  //aca hacer boton por boton gris o verde
+            terminados += 1;
+          }
+          //aca hacer boton por boton gris o verde
 
 
 
@@ -56,11 +57,12 @@ if (localStorage.getItem('em_totalEasyMode1') === null) {
       }
       var typed = new Typed(".typed", options);
 
-      $("#hardMode").removeClass("disabled");
-      $("#nombre1").html(player1 + " " + totalEasyMode1);
-      $("#nombre2").html(totalEasyMode2 + " " + player2);
-      localStorage.setItem('hm_completado', terminados);
 
+      $("#hardMode").removeClass("disabled");
+      $("#nombre1").html(player1);
+      $("#resP1").html(resFinalesP1)
+      $("#nombre2").html(player2);
+      $("#resP2").html(resFinalesP2);
       break;
 
       case 2:  // HARD MODE TERMINADO
@@ -71,23 +73,16 @@ if (localStorage.getItem('em_totalEasyMode1') === null) {
       var typed = new Typed(".typed", options);
       $("#tematicas").removeClass("disabled");
 
-
-      localStorage.setItem('hm_completado', terminados);
-      suma1 = parseInt(localStorage.getItem('em_totalEasyMode1')) + parseInt(localStorage.getItem('hm_totalHardMode1'));
-      suma2 = parseInt(localStorage.getItem('em_totalEasyMode2')) + parseInt(localStorage.getItem('hm_totalHardMode2'));
-
       $("#nombre1").html(player1);
-      $("#resP1").html(suma1);
+      $("#resP1").html(resFinalesP1);
       $("#nombre2").html(player2);
-      $("#resP2").html(suma2);
+      $("#resP2").html(resFinalesP2);
       //activar termianr batalla
       $("#btn-terminarBatalla").removeClass("disabled");
 
       break;
 
-
-
-  }
+  }//fin switch
 
 
 })
