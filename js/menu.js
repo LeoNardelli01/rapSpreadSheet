@@ -28,7 +28,7 @@ if (localStorage.getItem('em_totalEasyMode1') === null) {
     $("#hardMode").css('box-shadow', '0px 0px 15px green');
 
     terminados += 1;
-    localStorage.setItem('hm_completado', terminados);
+
   }
   //aca hacer boton por boton gris o verde
 
@@ -74,7 +74,7 @@ if (localStorage.getItem('em_totalEasyMode1') === null) {
 
       localStorage.setItem('hm_completado', terminados);
       suma1 = parseInt(localStorage.getItem('em_totalEasyMode1')) + parseInt(localStorage.getItem('hm_totalHardMode1'));
-      suma2 = parseInt(localStorage.getItem('em_totalEasyMode1')) + parseInt(localStorage.getItem('hm_totalHardMode2'));
+      suma2 = parseInt(localStorage.getItem('em_totalEasyMode2')) + parseInt(localStorage.getItem('hm_totalHardMode2'));
 
       $("#nombre1").html(player1);
       $("#resP1").html(suma1);
