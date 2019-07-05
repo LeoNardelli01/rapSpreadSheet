@@ -12,37 +12,36 @@
 header a{
   margin: 10px;
 }
+header h3{
+  padding-top: 70px;
+}
+.players {
+  padding-top: 15px;
+  background-color: black;
+  box-shadow:  0px 0px 10px black;
+}
+#nombre1 {
+  font-size: 20px;
+  font-family: 'Russo One', sans-serif;
+  color: white;
+  text-shadow: 0px 0px 15px blue;
+}
+
+#nombre2 {
+  font-size: 20px;
+  font-family: 'Russo One', sans-serif;
+  color: white;
+  text-shadow: 0px 0px 15px red;
+}
+
 
 .titulo {
   font-family: 'Russo One', sans-serif;
   font-size: 50px;
   color: black;
 }
-.rapper1{
-  width: 50vw;
-
-  height: 60vh;
 
 
-}
-#rap1{
-  font-size: 30px;
-  font-family: 'Kavoon', cursive;
-  color: white;
-  text-shadow: 0px 0px 12px blue;
-}
-
-.rapper2{
-  width: 50vw;
-
-  height: 60vh;
-}
-#rap2{
-  font-size: 30px;
-  font-family: 'Kavoon', cursive;
-  color: white;
-  text-shadow: 0px 0px 12px red;
-}
 
 select{
   background-color: black;
@@ -55,9 +54,18 @@ select{
 
 }
 .escenario{
-
+  overflow: hidden;
 
 }
+.rapper1{
+  position: relative;
+  top: -170px;
+}
+.rapper2{
+  position: relative;
+  top: -170px;
+}
+
 .escenario select{
   margin-top: 20px;
   position: relative;
@@ -73,6 +81,9 @@ select{
   background-image: linear-gradient(to top, blue , white);
 }
 
+.final h2{
+  font-size: 20px !important;
+}
 .final select{
 
   margin-left: 25px;
@@ -85,6 +96,7 @@ select{
   padding-right: 5%;
   font-family: 'Russo One', sans-serif;
 }
+
 
 #volverMenu {
   margin-top: 20px;

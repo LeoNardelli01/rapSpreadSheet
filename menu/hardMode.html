@@ -2,22 +2,41 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>HARD MODE</title>
+    <title>HARD MODE </title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/hardMode.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <div class="container-fluid">
-      <header>
+      <header class="">
+        <!--
         <a href="../menu/menu.html" class="btn btn-dark">Volver</a>
+        BOTON VOLVER
+      -->
+      <div class="row players fixed-top">
+
+        <div class="col">
+          <h4 id="nombre1" class="text-center text-uppercase"></h4>
+
+        </div>
+        <div class="col">
+          <h4 id="nombre2" class="text-center text-uppercase"></h4>
+
+        </div>
+      </div>
+      <div class="">
         <h3 class="text-center titulo">Hard Mode</h3>
+
+      </div>
 
       </header>
 
-      <div class="d-flex escenario">
-        <div class="rapper1">
+      <div class="row escenario">
+        <div class="col rapper1">
           <p id="rap1" class="text-uppercase text-center"></p>
 
           <select class="patron1p1 " name="">
@@ -82,7 +101,7 @@
 
 
         </div>
-        <div class="rapper2">
+        <div class="col rapper2">
           <p id="rap2" class="text-uppercase text-center"></p>
 
           <select class="patron1p2" name="">
@@ -148,33 +167,17 @@
         </div>
       </div>
 
-
+      
       <div class="final">
-        <div class="tecnicas d-flex justify-content-center">
-          <select class="tecnicasp1" name="">
+        <div class=" row tecnicas justify-content-center">
+          <select class=" col tecnicasp1" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
 
           </select>
-          <h2>Tecnicas</h2>
-          <select class="tecnicasp2" name="">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-
-          </select>
-        </div>
-
-        <div class="flow d-flex justify-content-center">
-          <select class="flowp1" name="">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-
-          </select>
-          <h2>Flow</h2>
-          <select class="flowp2" name="">
+          <h2 class="col text-center">Técnicas</h2>
+          <select class=" col tecnicasp2" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -182,15 +185,31 @@
           </select>
         </div>
 
-        <div class="escena d-flex justify-content-center">
-          <select class="escenap1" name="">
+        <div class=" row flow justify-content-center">
+          <select class="col flowp1" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
 
           </select>
-          <h2>Escena</h2>
-          <select class="escenap2" name="">
+          <h2 class="col text-center">Flow</h2>
+          <select class="col flowp2" name="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+
+          </select>
+        </div>
+
+        <div class=" row escena justify-content-center">
+          <select class="col escenap1" name="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+
+          </select>
+          <h2 class="col text-center">P. Escena</h2>
+          <select class="col escenap2" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -199,7 +218,7 @@
         </div>
 
 
-
+        <hr>
         <a id="volverMenu" href="../menu/menu.html" class="btn btn-success btn-lg btn-block">Terminar</a>
 
 

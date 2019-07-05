@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>EASY MODE</title>
-    <link rel="stylesheet" href="../css/easyMode.css">
+    <link rel="stylesheet" href="../css/libre.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,14 +13,31 @@
   <body>
     <div class="container-fluid">
       <header class="">
+        <!--
         <a href="../menu/menu.html" class="btn btn-dark">Volver</a>
+        BOTON VOLVER
+      -->
+      <div class="row players fixed-top">
+
+        <div class="col">
+          <h4 id="nombre1" class="text-center text-uppercase"></h4>
+
+        </div>
+        <div class="col">
+          <h4 id="nombre2" class="text-center text-uppercase"></h4>
+
+        </div>
+      </div>
+      <div class="">
         <h3 class="text-center titulo">Libre</h3>
+
+      </div>
 
       </header>
 
-      <div class="d-flex escenario">
-        <div class="rapper1">
-          <p id="rap1" class="text-uppercase text-center"></p>
+      <div class="row escenario">
+        <div class="col rapper1">
+
 
           <select class="patron1p1 " name="">
 
@@ -84,8 +101,7 @@
 
 
         </div>
-        <div class="rapper2">
-          <p id="rap2" class="text-uppercase text-center"></p>
+        <div class="col rapper2">
 
           <select class="patron1p2" name="">
 
@@ -96,7 +112,7 @@
             <option value="4">4</option>
 
           </select>
-          <input type="checkbox" name="" value="">
+          <input id="checkPatron1p2" type="checkbox" name="" value="">
           <br>
           <select class="patron2p2 " name="">
 
@@ -107,7 +123,7 @@
             <option value="4">4</option>
 
           </select>
-          <input type="checkbox" name="" value="">
+          <input id="checkPatron2p2" type="checkbox" name="" value="">
           <br>
 
           <select class="patron3p2 " name="">
@@ -119,7 +135,7 @@
             <option value="4">4</option>
 
           </select>
-          <input type="checkbox" name="" value="">
+          <input id="checkPatron3p2" type="checkbox" name="" value="">
           <br>
 
           <select class="patron4p2 " name="">
@@ -131,7 +147,7 @@
             <option value="4">4</option>
 
           </select>
-          <input type="checkbox" name="" value="">
+          <input id="checkPatron4p2" type="checkbox" name="" value="">
           <br>
           <select class="patron5p2 " name="">
 
@@ -142,7 +158,7 @@
             <option value="4">4</option>
 
           </select>
-          <input type="checkbox" name="" value="">
+          <input id="checkPatron5p2" type="checkbox" name="" value="">
           <br>
           <select class="patron6p2 " name="">
 
@@ -153,7 +169,7 @@
             <option value="4">4</option>
 
           </select>
-          <input type="checkbox" name="" value="">
+          <input id="checkPatron6p2" type="checkbox" name="" value="">
         </div>
       </div>
 
@@ -161,32 +177,16 @@
       <hr>
 
       <div class="final">
-        <div class="tecnicas d-flex justify-content-center">
-          <select class="tecnicasp1" name="">
+        <div class="row tecnicas justify-content-center">
+          <select class="col tecnicasp1" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
 
           </select>
 
-          <h2>Técnicas</h2>
-          <select class="tecnicasp2" name="">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-
-          </select>
-        </div>
-
-        <div class="flow d-flex justify-content-center">
-          <select class="flowp1" name="">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-
-          </select>
-          <h2>Flow</h2>
-          <select class="flowp2" name="">
+          <h2 class="col text-center">Técnicas</h2>
+          <select class="col tecnicasp2" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -194,15 +194,31 @@
           </select>
         </div>
 
-        <div class="escena d-flex justify-content-center">
-          <select class="escenap1" name="">
+        <div class="row flow justify-content-center">
+          <select class="col flowp1" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
 
           </select>
-          <h2>P. Escena</h2>
-          <select class="escenap2" name="">
+          <h2 class="col text-center">Flow</h2>
+          <select class="col flowp2" name="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+
+          </select>
+        </div>
+
+        <div class="row escena justify-content-center">
+          <select class="col escenap1" name="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+
+          </select>
+          <h2 class="col text-center">P. Escena</h2>
+          <select class="col escenap2" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -217,8 +233,8 @@
 
       <!-- libre segunda vuelta-->
 
-      <div class="d-flex escenario">
-        <div class="rapper1">
+      <div class="row escenario">
+        <div class="col rapper1">
           <p id="rap1" class="text-uppercase text-center"></p>
 
           <select class="vpatron1p1 " name="">
@@ -231,7 +247,7 @@
 
 
           </select>
-          <input type="checkbox" name="" value="">
+          <input  type="checkbox" name="" value="">
           <br>
           <select class="vpatron2p1 " name="">
 
@@ -288,7 +304,7 @@
             <input type="checkbox" name="" value="">
 
         </div>
-        <div class="rapper2">
+        <div class="col rapper2">
           <p id="rap2" class="text-uppercase text-center"></p>
 
           <select class="vpatron1p2" name="">
@@ -343,7 +359,7 @@
             <option value="4">4</option>
 
           </select>
-        
+
           <br>
           <select class="vpatron6p2 " name="">
 
@@ -361,32 +377,16 @@
       <hr>
 
       <div class="final">
-        <div class="tecnicas d-flex justify-content-center">
-          <select class="vtecnicasp1" name="">
+        <div class="row tecnicas justify-content-center">
+          <select class="col vtecnicasp1" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
 
           </select>
 
-          <h2>Técnicas</h2>
-          <select class="vtecnicasp2" name="">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-
-          </select>
-        </div>
-
-        <div class="flow d-flex justify-content-center">
-          <select class="vflowp1" name="">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-
-          </select>
-          <h2>Flow</h2>
-          <select class="vflowp2" name="">
+          <h2 class="col text-center">Técnicas</h2>
+          <select class="col vtecnicasp2" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -394,15 +394,31 @@
           </select>
         </div>
 
-        <div class="escena d-flex justify-content-center">
-          <select class="vescenap1" name="">
+        <div class="row flow justify-content-center">
+          <select class="col vflowp1" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
 
           </select>
-          <h2>P. Escena</h2>
-          <select class="vescenap2" name="">
+          <h2 class="col text-center">Flow</h2>
+          <select class="col vflowp2" name="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+
+          </select>
+        </div>
+
+        <div class="row escena justify-content-center">
+          <select class="col vescenap1" name="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+
+          </select>
+          <h2 class="col text-center">P. Escena</h2>
+          <select class="col vescenap2" name="">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
