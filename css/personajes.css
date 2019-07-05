@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+header a{
+  margin: 10px;
+}
+
+.titulo {
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+  color: black;
+}
+.rapper1{
+  width: 50vw;
+
+  height: 60vh;
+
+
+}
+#rap1{
+  font-size: 30px;
+  font-family: 'Kavoon', cursive;
+  color: white;
+  text-shadow: 0px 0px 12px blue;
+}
+
+.rapper2{
+  width: 50vw;
+
+  height: 60vh;
+}
+#rap2{
+  font-size: 30px;
+  font-family: 'Kavoon', cursive;
+  color: white;
+  text-shadow: 0px 0px 12px red;
+}
+
+select{
+  background-color: black;
+  color: white;
+  font-family: 'play', sans-serif !important;
+  text-align-last: center;
+  width: 55px;
+  height: 38px;
+  border: none;
+
+}
+.escenario{
+
+
+}
+.escenario select{
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.final{
+  width: auto;
+  height: auto;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to top, blue , white);
+}
+
+.final select{
+
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.tecnicas, .flow, .escena{
+  margin-top: 5px;
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Russo One', sans-serif;
+}
+
+#volverMenu {
+  margin-top: 20px;
+  max-width: 70%;
+  margin-bottom: 20px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: 'Russo One', sans-serif;
+}

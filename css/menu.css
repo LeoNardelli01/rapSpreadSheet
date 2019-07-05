@@ -7,23 +7,26 @@
   overflow: hidden;
 }
 
-.rappers{
-  overflow: hidden;
-
-
+header{
+  padding-top: 45px;
 }
-.r1{
-
-  font-size: 25px;
+.players {
+  padding-top: 30px;
+  background-color: black;
+  box-shadow:  0px 0px 10px black;
+}
+#nombre1 {
+  font-size: 20px;
   font-family: 'Russo One', sans-serif;
   color: white;
-  text-shadow: 0px 0px 15px blue;
+  text-shadow: 0px 0px 10px blue;
 }
-.r2{
- font-size: 25px;
- font-family: 'Russo One', sans-serif;
- color: white;
- text-shadow: 0px 0px 15px red;
+
+#nombre2 {
+  font-size: 20px;
+  font-family: 'Russo One', sans-serif;
+  color: white;
+  text-shadow: 0px 0px 10px red;
 }
 
 .menu {

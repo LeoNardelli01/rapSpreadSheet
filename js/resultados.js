@@ -29,6 +29,33 @@ $(function(){
     let hm_escenap2 = localStorage.getItem('hm_escenap2')
     let hm_totalP2 = localStorage.getItem('hm_totalHardMode2');
 
+    // variables tematicas
+    let te_totalPatronesP1 = localStorage.getItem('te_totalPatronesP1');
+    let te_tecnicasp1 = localStorage.getItem('te_tecnicasp1');
+    let te_flowp1 = localStorage.getItem('te_flowp1');
+    let te_escenap1 = localStorage.getItem('te_escenap1')
+    let te_totalP1 = localStorage.getItem('te_totalTematicas1');
+
+    let te_totalPatronesP2 = localStorage.getItem('te_totalPatronesP2');
+    let te_tecnicasp2 = localStorage.getItem('te_tecnicasp2');
+    let te_flowp2 = localStorage.getItem('te_flowp2');
+    let te_escenap2 = localStorage.getItem('te_escenap2')
+    let te_totalP2 = localStorage.getItem('te_totalTematicas2');
+
+    // variables personajes
+    let pe_totalPatronesP1 = localStorage.getItem('pe_totalPatronesP1');
+    let pe_tecnicasp1 = localStorage.getItem('pe_tecnicasp1');
+    let pe_flowp1 = localStorage.getItem('pe_flowp1');
+    let pe_escenap1 = localStorage.getItem('pe_escenap1')
+    let pe_totalP1 = localStorage.getItem('pe_totalPersonajes1');
+
+    let pe_totalPatronesP2 = localStorage.getItem('pe_totalPatronesP2');
+    let pe_tecnicasp2 = localStorage.getItem('pe_tecnicasp2');
+    let pe_flowp2 = localStorage.getItem('pe_flowp2');
+    let pe_escenap2 = localStorage.getItem('pe_escenap2')
+    let pe_totalP2 = localStorage.getItem('pe_totalPersonajes2');
+
+
     //-----------------
 
     $("#player1").html(player1);
@@ -59,10 +86,35 @@ $(function(){
     $("#hm_resEscenaP2").html(hm_escenap2);
     $("#hm_totalP2").html(hm_totalP2);
 
-    
+    // -------- -------- ----------
+    $("#te_resPatronesP1").html(te_totalPatronesP1);
+    $("#te_resTecnicasP1").html(te_tecnicasp1);
+    $("#te_resFlowP1").html(te_flowp1);
+    $("#te_resEscenaP1").html(te_escenap1)
+    $("#te_totalP1").html(te_totalP1);
 
-    var resFinalesP1 = parseInt(em_totalP1) + parseInt(hm_totalP1);
-    var resFinalesP2 = parseInt(em_totalP2) + parseInt(hm_totalP2);
+    $("#te_resPatronesP2").html(te_totalPatronesP2);
+    $("#te_resTecnicasP2").html(te_tecnicasp2);
+    $("#te_resFlowP2").html(te_flowp2);
+    $("#te_resEscenaP2").html(te_escenap2);
+    $("#te_totalP2").html(te_totalP2);
+
+    // -------- -------- ----------
+    $("#pe_resPatronesP1").html(pe_totalPatronesP1);
+    $("#pe_resTecnicasP1").html(pe_tecnicasp1);
+    $("#pe_resFlowP1").html(pe_flowp1);
+    $("#pe_resEscenaP1").html(pe_escenap1)
+    $("#pe_totalP1").html(pe_totalP1);
+
+    $("#pe_resPatronesP2").html(pe_totalPatronesP2);
+    $("#pe_resTecnicasP2").html(pe_tecnicasp2);
+    $("#pe_resFlowP2").html(pe_flowp2);
+    $("#pe_resEscenaP2").html(pe_escenap2);
+    $("#pe_totalP2").html(pe_totalP2);
+
+
+    var resFinalesP1 = parseInt(em_totalP1) + parseInt(hm_totalP1) + parseInt(te_totalP1) + parseInt(pe_totalP1);
+    var resFinalesP2 = parseInt(em_totalP2) + parseInt(hm_totalP2) + parseInt(te_totalP2) + parseInt(pe_totalP2);
 
     $("#resFinalP1").html(resFinalesP1);
     $("#resFinalP2").html(resFinalesP2);
