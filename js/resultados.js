@@ -119,6 +119,7 @@ $(function(){
     $("#resFinalP1").html(resFinalesP1);
     $("#resFinalP2").html(resFinalesP2);
 
+
     if (resFinalesP1 > resFinalesP2) {
       $("#ganador").html("GANO " + player1);
     } else if (resFinalesP2 > resFinalesP1) {
@@ -128,8 +129,69 @@ $(function(){
       $("#replica").append(btn_replica);
     }
 
+    // CHART.JS
+
+    //aplico regla de 3 para sacar porcentajes en relacion al maximo
+    var totalPatronesP1 = (parseInt(em_totalPatronesP1) + parseInt(hm_totalPatronesP1) + parseInt(te_totalPatronesP1) + parseInt(pe_totalPatronesP1)) * 100 / 104;
+    var totalTecnicasP1 = (parseInt(em_tecnicasp1) + parseInt(hm_tecnicasp1) + parseInt(te_tecnicasp1) + parseInt(pe_tecnicasp1)) * 100 / 10;
+    var totalFlowP1 = (parseInt(em_flowp1) + parseInt(hm_flowp1) + parseInt(te_flowp1) + parseInt(pe_flowp1)) * 100 / 10;
+    var totalEscenaP1 = (parseInt(em_escenap1) + parseInt(hm_escenap1) + parseInt(te_escenap1) + parseInt(pe_escenap1)) * 100 / 10;
+
+    var totalPatronesP2 = (parseInt(em_totalPatronesP2) + parseInt(hm_totalPatronesP2) + parseInt(te_totalPatronesP2) + parseInt(pe_totalPatronesP2)) * 100 / 104;
+    var totalTecnicasP2 = (parseInt(em_tecnicasp2) + parseInt(hm_tecnicasp2) + parseInt(te_tecnicasp2) + parseInt(pe_tecnicasp2)) * 100 / 10;
+    var totalFlowP2 = (parseInt(em_flowp2) + parseInt(hm_flowp2) + parseInt(te_flowp2) + parseInt(pe_flowp2)) * 100 / 10;
+    var totalEscenaP2 = (parseInt(em_escenap2) + parseInt(hm_escenap2) + parseInt(te_escenap2) + parseInt(pe_escenap2)) * 100 / 10;
+
+    console.log("patrones P1: " + totalPatronesP1);
+    console.log("Tecnicas P1: " + totalTecnicasP1);
+    console.log("Flow P1: " + totalFlowP1);
+    console.log("Escena P1: " + totalEscenaP1);
+
+    console.log("patrones P2: " + totalPatronesP2);
+    console.log("Tecnicas P2: " + totalTecnicasP2);
+    console.log("Flow P2: " + totalFlowP2);
+    console.log("Escena P2: " + totalEscenaP2);
 
 
+    var chart1 = document.getElementById('chart1').getContext('2d');
+
+    var chart1Variables = new Chart(chart1,{
+        type:"bar",
+        data: {
+          labels:['Patrones', 'Técnica', 'Flow', 'P. Escena'],
+          datasets: [
+            {
+            label: player1,
+            data: [parseInt(totalPatronesP1), parseInt(totalTecnicasP1), parseInt(totalFlowP1), parseInt(totalEscenaP1) ],
+            backgroundColor: 'rgba(0, 98, 255, 0.5)',
+            borderColor: 'rgb(0, 98, 255)',
+            borderWidth: 2
+          },{
+            label: player2,
+            data: [parseInt(totalPatronesP2), parseInt(totalTecnicasP2), parseInt(totalFlowP2), parseInt(totalEscenaP2) ],
+            backgroundColor: 'rgba(255, 0, 0, 0.5)',
+            borderColor: 'rgb(255, 0, 0)',
+            borderWidth: 2
+          }
+        ],
+        options:{
+          scales:{
+            yAxes:[{
+              ticks:{
+                beginAtZero: true,
+                min:0,
+                max:100
+              }
+            }]
+          }
+        }
+      }
+    });
+    /*
+
+    */
+
+    //nueva batalla btn
     $("#nuevaBatalla").click(function(e){
       var r = confirm("¿Estás seguro?\n Esto no se podra deshacer");
 
