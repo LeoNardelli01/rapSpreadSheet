@@ -177,7 +177,7 @@ $(function(){
           scales: {
 
             yAxes: [{
-              display: true,
+              display: false,
               ticks: {
                 beginAtZero: true,
                 min: 0,
@@ -193,7 +193,8 @@ $(function(){
     BATALLOMETRO
     */
     $(".progressBar").width(batallometro + "%");
-    $(".progressBar").html(batallometro + "%")
+    $(".progressBar").html(batallometro.toFixed(2) + "%");
+    $(".h6-batallometro").html("(" + (parseInt(resFinalesP1) + parseInt(resFinalesP2)) + " Pts totales de 500)")
 
     //nueva batalla btn
     $("#nuevaBatalla").click(function(e){
