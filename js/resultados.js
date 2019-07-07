@@ -132,30 +132,19 @@ $(function(){
     // CHART.JS
 
     //aplico regla de 3 para sacar porcentajes en relacion al maximo
-    var totalPatronesP1 = (parseInt(em_totalPatronesP1) + parseInt(hm_totalPatronesP1) + parseInt(te_totalPatronesP1) + parseInt(pe_totalPatronesP1)) * 100 / 104;
-    var totalTecnicasP1 = (parseInt(em_tecnicasp1) + parseInt(hm_tecnicasp1) + parseInt(te_tecnicasp1) + parseInt(pe_tecnicasp1)) * 100 / 10;
-    var totalFlowP1 = (parseInt(em_flowp1) + parseInt(hm_flowp1) + parseInt(te_flowp1) + parseInt(pe_flowp1)) * 100 / 10;
-    var totalEscenaP1 = (parseInt(em_escenap1) + parseInt(hm_escenap1) + parseInt(te_escenap1) + parseInt(pe_escenap1)) * 100 / 10;
+    var totalPatronesP1 = (parseInt(em_totalPatronesP1) + parseInt(hm_totalPatronesP1) + parseInt(te_totalPatronesP1) + parseInt(pe_totalPatronesP1)) * 100 / 202;
+    var totalTecnicasP1 = (parseInt(em_tecnicasp1) + parseInt(hm_tecnicasp1) + parseInt(te_tecnicasp1) + parseInt(pe_tecnicasp1)) * 100 / 16;
+    var totalFlowP1 = (parseInt(em_flowp1) + parseInt(hm_flowp1) + parseInt(te_flowp1) + parseInt(pe_flowp1)) * 100 / 16;
+    var totalEscenaP1 = (parseInt(em_escenap1) + parseInt(hm_escenap1) + parseInt(te_escenap1) + parseInt(pe_escenap1)) * 100 / 16;
 
-    var totalPatronesP2 = (parseInt(em_totalPatronesP2) + parseInt(hm_totalPatronesP2) + parseInt(te_totalPatronesP2) + parseInt(pe_totalPatronesP2)) * 100 / 104;
-    var totalTecnicasP2 = (parseInt(em_tecnicasp2) + parseInt(hm_tecnicasp2) + parseInt(te_tecnicasp2) + parseInt(pe_tecnicasp2)) * 100 / 10;
-    var totalFlowP2 = (parseInt(em_flowp2) + parseInt(hm_flowp2) + parseInt(te_flowp2) + parseInt(pe_flowp2)) * 100 / 10;
-    var totalEscenaP2 = (parseInt(em_escenap2) + parseInt(hm_escenap2) + parseInt(te_escenap2) + parseInt(pe_escenap2)) * 100 / 10;
-
-    console.log("patrones P1: " + totalPatronesP1);
-    console.log("Tecnicas P1: " + totalTecnicasP1);
-    console.log("Flow P1: " + totalFlowP1);
-    console.log("Escena P1: " + totalEscenaP1);
-
-    console.log("patrones P2: " + totalPatronesP2);
-    console.log("Tecnicas P2: " + totalTecnicasP2);
-    console.log("Flow P2: " + totalFlowP2);
-    console.log("Escena P2: " + totalEscenaP2);
-
+    var totalPatronesP2 = (parseInt(em_totalPatronesP2) + parseInt(hm_totalPatronesP2) + parseInt(te_totalPatronesP2) + parseInt(pe_totalPatronesP2)) * 100 / 202;
+    var totalTecnicasP2 = (parseInt(em_tecnicasp2) + parseInt(hm_tecnicasp2) + parseInt(te_tecnicasp2) + parseInt(pe_tecnicasp2)) * 100 / 16;
+    var totalFlowP2 = (parseInt(em_flowp2) + parseInt(hm_flowp2) + parseInt(te_flowp2) + parseInt(pe_flowp2)) * 100 / 16;
+    var totalEscenaP2 = (parseInt(em_escenap2) + parseInt(hm_escenap2) + parseInt(te_escenap2) + parseInt(pe_escenap2)) * 100 / 16;
 
     var chart1 = document.getElementById('chart1').getContext('2d');
 
-    var chart1Variables = new Chart(chart1,{
+    var chart1_bar = new Chart(chart1,{
         type:"bar",
         data: {
           labels:['Patrones', 'Técnica', 'Flow', 'P. Escena'],
@@ -173,19 +162,22 @@ $(function(){
             borderColor: 'rgb(255, 0, 0)',
             borderWidth: 2
           }
-        ],
-        options:{
-          scales:{
-            yAxes:[{
-              ticks:{
+        ]},
+        options: {
+          scales: {
+
+            yAxes: [{
+              display: true,
+              ticks: {
                 beginAtZero: true,
-                min:0,
-                max:100
+                min: 0,
+                max: 100,
+
               }
             }]
           }
         }
-      }
+
     });
     /*
 
