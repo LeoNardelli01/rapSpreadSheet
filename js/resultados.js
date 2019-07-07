@@ -1,7 +1,7 @@
 $(function(){
     //--- Players---
-    let player1 = localStorage.getItem('rap1');
-    let player2 = localStorage.getItem('rap2');
+    let player1 = localStorage.getItem('rap1').toUpperCase();
+    let player2 = localStorage.getItem('rap2').toUpperCase();
 
     // variables EasyMode
     let em_totalPatronesP1 = localStorage.getItem('em_totalPatronesP1');
@@ -137,10 +137,14 @@ $(function(){
     var totalFlowP1 = (parseInt(em_flowp1) + parseInt(hm_flowp1) + parseInt(te_flowp1) + parseInt(pe_flowp1)) * 100 / 16;
     var totalEscenaP1 = (parseInt(em_escenap1) + parseInt(hm_escenap1) + parseInt(te_escenap1) + parseInt(pe_escenap1)) * 100 / 16;
 
+
     var totalPatronesP2 = (parseInt(em_totalPatronesP2) + parseInt(hm_totalPatronesP2) + parseInt(te_totalPatronesP2) + parseInt(pe_totalPatronesP2)) * 100 / 202;
     var totalTecnicasP2 = (parseInt(em_tecnicasp2) + parseInt(hm_tecnicasp2) + parseInt(te_tecnicasp2) + parseInt(pe_tecnicasp2)) * 100 / 16;
     var totalFlowP2 = (parseInt(em_flowp2) + parseInt(hm_flowp2) + parseInt(te_flowp2) + parseInt(pe_flowp2)) * 100 / 16;
     var totalEscenaP2 = (parseInt(em_escenap2) + parseInt(hm_escenap2) + parseInt(te_escenap2) + parseInt(pe_escenap2)) * 100 / 16;
+
+    var batallometro = (parseInt(resFinalesP1) + parseInt(resFinalesP2)) * 100 / 500;
+
 
     var chart1 = document.getElementById('chart1').getContext('2d');
 
@@ -164,6 +168,12 @@ $(function(){
           }
         ]},
         options: {
+          legend:{
+            labels:{
+              fontColor: 'white',
+              fontFamily: 'Russo One'
+            }
+          },
           scales: {
 
             yAxes: [{
@@ -172,7 +182,7 @@ $(function(){
                 beginAtZero: true,
                 min: 0,
                 max: 100,
-
+                fontSize: 20
               }
             }]
           }
@@ -180,8 +190,10 @@ $(function(){
 
     });
     /*
-
+    BATALLOMETRO
     */
+    $(".progressBar").width(batallometro + "%");
+    $(".progressBar").html(batallometro + "%")
 
     //nueva batalla btn
     $("#nuevaBatalla").click(function(e){
