@@ -14,7 +14,7 @@
 header{
   width: 100vw;
   height: 20vh;
-  background-color: rgba(255, 255, 255);
+  background-color: red;
 }
 .logo img{
   width: 80px;
@@ -25,7 +25,7 @@ header{
   padding-top: 15px;
   width: 100vw;
   height: 80vh;
-  background-image: linear-gradient(to top, blue , white);
+  background-image: linear-gradient(to top, blue , red);
 
 }
 .players input {

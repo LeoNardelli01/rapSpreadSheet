@@ -59,8 +59,10 @@ $(function(){
   switch (terminados) {
     case 0:      //ARRANCA EL MENU
       var options = {
-        strings: ["<h4>Bienvenido a RAP SpreadSheeT</h4>", "<h4>Formato FMS</h4>","<h4>Buena Suerte " + player2 + " y " + player1 + "" + "</h4>", "<h4>3...2...1... TIEMPO!!</h4>", "<h4></h4>" ],
-        typeSpeed: 70
+        strings: ["<h4>Bienvenido a RAP SpreadsheeT</h4>", "<h4>Formato FMS</h4>","<h4>Buena Suerte " + player2 + " y " + player1 + "" + "</h4>", "<h4>3...2...1... TIEMPO!!</h4>", "<h4></h4>" ],
+        typeSpeed: 70,
+        showCursor: false,
+        smartBackspace: true
       }
       var typed = new Typed(".typed", options);
 
@@ -74,7 +76,9 @@ $(function(){
 
       var options = {
         strings: ["<h4>Easy Mode Terminado</h4>", "<h4>" + localStorage.getItem('em_totalEasyMode1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('em_totalEasyMode2') + " Pts Para " + player2 +"</h4>", "<h4>Preparate para el Hard Mode</h4>", "<h4></h4>" ],
-        typeSpeed: 70
+        typeSpeed: 70,
+        showCursor: false,
+        smartBackspace: true
       }
       var typed = new Typed(".typed", options);
 
@@ -89,7 +93,9 @@ $(function(){
       case 2:  // HARD MODE TERMINADO
       var options = {
         strings: ["<h4>Hard Mode Terminado</h4>", "<h4>" + localStorage.getItem('hm_totalHardMode1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('hm_totalHardMode2') + " Pts Para " + player2 +"</h4>", "<h4>Preparate para Temáticas</h4>", "<h4></h4>" ],
-        typeSpeed: 70
+        typeSpeed: 70,
+        showCursor: false,
+        smartBackspace: true
       }
       var typed = new Typed(".typed", options);
       $("#tematicas").removeClass("disabled");
@@ -105,7 +111,9 @@ $(function(){
       case 3: //Tematicas terminado
         var options = {
           strings: ["<h4>Temáticas Terminado</h4>", "<h4>" + localStorage.getItem('te_totalTematicas1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('te_totalTematicas2') + " Pts Para " + player2 +"</h4>", "<h4>Preparate para Personajes</h4>", "<h4></h4>" ],
-          typeSpeed: 70
+          typeSpeed: 70,
+          showCursor: false,
+          smartBackspace: true
         }
         var typed = new Typed(".typed", options);
         $("#personajes").removeClass("disabled");
@@ -120,7 +128,9 @@ $(function(){
       case 4: // personajes terminado
       var options = {
         strings: ["<h4>Personajes Terminado</h4>", "<h4>" + localStorage.getItem('pe_totalPersonajes1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('pe_totalPersonajes2') + " Pts Para " + player2 +"</h4>", "<h4>Se viene el minuto a sangre..</h4>", "<h4></h4>" ],
-        typeSpeed: 70
+        typeSpeed: 70,
+        showCursor: false,
+        smartBackspace: true
       }
       var typed = new Typed(".typed", options);
       $("#libre").removeClass("disabled");

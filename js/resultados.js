@@ -120,7 +120,28 @@ $(function(){
     $("#resFinalP2").html(resFinalesP2);
 
 
-    if (resFinalesP1 > resFinalesP2) {
+    function difTotales(num1, num2){
+      if (num1 > num2) {
+        return num1 - num2;
+      }else{
+        return num2 - num1;
+      }
+    }
+
+    var difTotales = difTotales(resFinalesP1, resFinalesP2);
+
+    if (difTotales <= 5) {
+      var btn_replica = "<a id='replica' class='btn btn-danger btn-block' href='replica.html'>Empezar Replica</a>";
+      $("#replica").append(btn_replica);
+    } else if(resFinalesP1 > resFinalesP2 ){
+      $("#ganador").html("GANO " + player1);
+    } else {
+        $("#ganador").html("GANO " + player2);
+    }
+
+
+    /*
+    if (resFinalesP1 > resFinalesP2 ) {
       $("#ganador").html("GANO " + player1);
     } else if (resFinalesP2 > resFinalesP1) {
       $("#ganador").html("GANO " + player2);
@@ -128,7 +149,7 @@ $(function(){
       var btn_replica = "<a id='replica' class='btn btn-danger btn-block' href='replica.html'>Empezar Replica</a>";
       $("#replica").append(btn_replica);
     }
-
+    */ 
     // CHART.JS
 
     //aplico regla de 3 para sacar porcentajes en relacion al maximo
@@ -143,7 +164,9 @@ $(function(){
     var totalFlowP2 = (parseInt(em_flowp2) + parseInt(hm_flowp2) + parseInt(te_flowp2) + parseInt(pe_flowp2)) * 100 / 16;
     var totalEscenaP2 = (parseInt(em_escenap2) + parseInt(hm_escenap2) + parseInt(te_escenap2) + parseInt(pe_escenap2)) * 100 / 16;
 
-    var batallometro = (parseInt(resFinalesP1) + parseInt(resFinalesP2)) * 100 / 500;
+    var batallometro = (parseInt(resFinalesP1) + parseInt(resFinalesP2)) * 100 / 260;
+
+
 
 
     var chart1 = document.getElementById('chart1').getContext('2d');
@@ -154,6 +177,7 @@ $(function(){
           labels:['Patrones', 'Técnica', 'Flow', 'P. Escena'],
           datasets: [
             {
+
             label: player1,
             data: [parseInt(totalPatronesP1), parseInt(totalTecnicasP1), parseInt(totalFlowP1), parseInt(totalEscenaP1) ],
             backgroundColor: 'rgba(0, 98, 255, 0.5)',
@@ -168,14 +192,29 @@ $(function(){
           }
         ]},
         options: {
+          layout: {
+              padding: {
+                  left: 0,
+                  right: 0,
+                  top: 0,
+                  bottom: 0
+              }
+          },
           legend:{
             labels:{
               fontColor: 'white',
               fontFamily: 'Russo One'
+
             }
           },
           scales: {
-
+            xAxes: [{
+              ticks: {
+                fontColor: 'white',
+                fontSize: 14,
+                fontFamily: 'Russo One'
+              }
+            }],
             yAxes: [{
               display: false,
               ticks: {
@@ -192,9 +231,11 @@ $(function(){
     /*
     BATALLOMETRO
     */
+
+
     $(".progressBar").width(batallometro + "%");
     $(".progressBar").html(batallometro.toFixed(2) + "%");
-    $(".h6-batallometro").html("(" + (parseInt(resFinalesP1) + parseInt(resFinalesP2)) + " Pts totales de 500)")
+    $(".h6-batallometro").html((parseInt(resFinalesP1) + parseInt(resFinalesP2)) + " Pts totales (nivel de batalla)")
 
     //nueva batalla btn
     $("#nuevaBatalla").click(function(e){
