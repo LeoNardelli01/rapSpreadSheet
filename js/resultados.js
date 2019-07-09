@@ -149,7 +149,7 @@ $(function(){
       var btn_replica = "<a id='replica' class='btn btn-danger btn-block' href='replica.html'>Empezar Replica</a>";
       $("#replica").append(btn_replica);
     }
-    */ 
+    */
     // CHART.JS
 
     //aplico regla de 3 para sacar porcentajes en relacion al maximo
@@ -164,7 +164,7 @@ $(function(){
     var totalFlowP2 = (parseInt(em_flowp2) + parseInt(hm_flowp2) + parseInt(te_flowp2) + parseInt(pe_flowp2)) * 100 / 16;
     var totalEscenaP2 = (parseInt(em_escenap2) + parseInt(hm_escenap2) + parseInt(te_escenap2) + parseInt(pe_escenap2)) * 100 / 16;
 
-    var batallometro = (parseInt(resFinalesP1) + parseInt(resFinalesP2)) * 100 / 260;
+    var batallometro = (parseInt(resFinalesP1) + parseInt(resFinalesP2)) * 100 / 500;
 
 
 
