@@ -130,26 +130,24 @@ $(function(){
 
     var difTotales = difTotales(resFinalesP1, resFinalesP2);
 
+
     if (difTotales <= 5) {
-      var btn_replica = "<a id='replica' class='btn btn-danger btn-block' href='replica.html'>Empezar Replica</a>";
+      var btn_replica = "<a id='replica' class='btn' href='replica.html'>Empezar Replica</a>";
       $("#replica").append(btn_replica);
+      $("#ganador").html("REPLICA!");
+
     } else if(resFinalesP1 > resFinalesP2 ){
+      var btn_ganoP1 = "<a id='gano' class='btn btn-lg' href=''../index.html'>Nueva Batalla</a>";
+      $("#gano").append(btn_ganoP1);
+
       $("#ganador").html("GANO " + player1);
     } else {
+        var btn_ganoP2 = "<a id='gano' class='btn btn-lg' href=''../index.html'>Nueva Batalla</a>";
+        $("#gano").append(btn_ganoP2);
         $("#ganador").html("GANO " + player2);
     }
 
 
-    /*
-    if (resFinalesP1 > resFinalesP2 ) {
-      $("#ganador").html("GANO " + player1);
-    } else if (resFinalesP2 > resFinalesP1) {
-      $("#ganador").html("GANO " + player2);
-    } else{
-      var btn_replica = "<a id='replica' class='btn btn-danger btn-block' href='replica.html'>Empezar Replica</a>";
-      $("#replica").append(btn_replica);
-    }
-    */
     // CHART.JS
 
     //aplico regla de 3 para sacar porcentajes en relacion al maximo
@@ -177,38 +175,38 @@ $(function(){
           labels:['Patrones', 'Técnica', 'Flow', 'P. Escena'],
           datasets: [
             {
-
             label: player1,
             data: [parseInt(totalPatronesP1), parseInt(totalTecnicasP1), parseInt(totalFlowP1), parseInt(totalEscenaP1) ],
-            backgroundColor: 'rgba(0, 98, 255, 0.5)',
+            backgroundColor: 'rgba(0, 98, 255, 0.7)',
             borderColor: 'rgb(0, 98, 255)',
-            borderWidth: 2
+            borderWidth: 1
           },{
             label: player2,
             data: [parseInt(totalPatronesP2), parseInt(totalTecnicasP2), parseInt(totalFlowP2), parseInt(totalEscenaP2) ],
-            backgroundColor: 'rgba(255, 0, 0, 0.5)',
+            backgroundColor: 'rgba(255, 0, 0, 0.7)',
             borderColor: 'rgb(255, 0, 0)',
-            borderWidth: 2
+            borderWidth: 1
           }
         ]},
         options: {
           layout: {
               padding: {
                   left: 0,
-                  right: 0,
-                  top: 0,
-                  bottom: 0
+                  right: 10,
+                  top: 10,
+                  bottom: 10
               }
           },
           legend:{
             labels:{
               fontColor: 'white',
-              fontFamily: 'Russo One'
-
+              fontFamily: 'Russo One',
+              display: false
             }
           },
           scales: {
             xAxes: [{
+
               ticks: {
                 fontColor: 'white',
                 fontSize: 14,
@@ -221,7 +219,7 @@ $(function(){
                 beginAtZero: true,
                 min: 0,
                 max: 100,
-                fontSize: 20
+                fontSize: 18
               }
             }]
           }
@@ -238,11 +236,12 @@ $(function(){
     $(".h6-batallometro").html((parseInt(resFinalesP1) + parseInt(resFinalesP2)) + " Pts totales (nivel de batalla)")
 
     //nueva batalla btn
-    $("#nuevaBatalla").click(function(e){
+    $("#gano").click(function(e){
       var r = confirm("¿Estás seguro?\n Esto no se podra deshacer");
 
       if (r) {
         localStorage.clear();
+
       } else{
         e.preventDefault();
       }

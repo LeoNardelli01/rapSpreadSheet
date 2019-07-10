@@ -44,11 +44,18 @@ h4{
 }
 
 
-#nuevaBatalla{
+#gano a, #replica a{
+  background: linear-gradient(0.60turn, red, blue) !important;
+  position: relative;
+  left: 50%;
+  transform:translate(-50%);
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  box-shadow: 0px 5px 10px red, 0px 0px 15px blue, 0px 0px 15px blue;
 }
 
 #ganador{
-  border-radius: 0px 0px 20px 20px;
+
   margin-top: 25px;
   font-family: 'Russo One', sans-serif;
   color: white;
