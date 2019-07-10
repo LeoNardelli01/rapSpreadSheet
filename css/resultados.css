@@ -52,11 +52,12 @@ h4{
   color: white;
   font-family: 'Russo One', sans-serif;
   box-shadow: 0px 5px 10px red, 0px 0px 15px blue, 0px 0px 15px blue;
+  margin-top: 20px;
 }
 
 #ganador{
 
-  margin-top: 25px;
+  margin-top: 15px;
   font-family: 'Russo One', sans-serif;
   color: white;
   text-shadow: 0px 0px 10px white;
@@ -92,8 +93,8 @@ h4{
 
 #chart1 {
   width: 400px !important;
-  height: 400px !important;
-  margin-top: 15px;
+  height: 350px !important;
+
 }
 
 .batallometro {
