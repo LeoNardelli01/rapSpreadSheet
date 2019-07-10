@@ -137,12 +137,12 @@ $(function(){
       $("#ganador").html("REPLICA!");
 
     } else if(resFinalesP1 > resFinalesP2 ){
-      var btn_ganoP1 = "<a id='gano' class='btn btn-lg' href=''../index.html'>Nueva Batalla</a>";
+      var btn_ganoP1 = "<a id='gano' class='btn btn-lg' href='../index.html'>Nueva Batalla</a>";
       $("#gano").append(btn_ganoP1);
 
       $("#ganador").html("GANO " + player1);
     } else {
-        var btn_ganoP2 = "<a id='gano' class='btn btn-lg' href=''../index.html'>Nueva Batalla</a>";
+        var btn_ganoP2 = "<a id='gano' class='btn btn-lg' href='../index.html'>Nueva Batalla</a>";
         $("#gano").append(btn_ganoP2);
         $("#ganador").html("GANO " + player2);
     }
