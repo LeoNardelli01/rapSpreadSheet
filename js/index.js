@@ -1,7 +1,6 @@
 
 $(function(){
 
-
     var btnEmpezar = $("#empezar");
 
     btnEmpezar.click(function(e){
