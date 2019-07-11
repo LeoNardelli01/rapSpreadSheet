@@ -30,9 +30,29 @@ $(function(){
         e.preventDefault();
 
     } else {
-        //Variable checkbox
-        
+        //Variable checkbox respuesta P1
 
+
+      /*
+      if ($("#checkPatron1p1").is(':checked')) {
+        checkTotal1 += 1;
+
+      } else if($("#checkPatron2p1").is(':checked')){
+        checkTotal1 +=1;
+
+      } else if($("#checkPatron3p1").is(':checked')){
+        checkTotal1 +=1;
+
+      } else if($("#checkPatron4p1").is(':checked')){
+        checkTotal1 +=1;
+
+      } else if($("#checkPatron5p1").is(':checked')){
+        checkTotal1 +=1;
+
+      } else if($("#checkPatron6p1").is(':checked')){
+        checkTotal1 +=1;
+      }
+      */
 
 
       //variables del jugador 1
@@ -52,7 +72,7 @@ $(function(){
       flowp1 = parseInt($(".flowp1").val()) + parseInt($(".vflowp1").val());
       escenap1 = parseInt($(".escenap1").val()) + parseInt($(".vescenap1").val());
       //-------------------
-      totalTematicasP1 = totalPatronesP1+tecnicasp1+flowp1+escenap1;
+      totalLibreP1 = totalPatronesP1+tecnicasp1+flowp1+escenap1;
 
 
       //variables del jugador 2
@@ -70,7 +90,7 @@ $(function(){
       flowp2 = parseInt($(".flowp2").val()) + parseInt($(".vflowp2").val());
       escenap2 = parseInt($(".escenap2").val()) + parseInt($(".vescenap2").val()) ;
       //-----
-      totalTematicasP2 = totalPatronesP2+tecnicasp2+flowp2+escenap2;
+      totalLibreP2 = totalPatronesP2+tecnicasp2+flowp2+escenap2;
 
 
         //---- Seteo de localStorage
@@ -86,7 +106,7 @@ $(function(){
         localStorage.setItem('li_tecnicasp1', tecnicasp1);
         localStorage.setItem('li_flowp1', flowp1);
         localStorage.setItem('li_escenap1', escenap1);
-        localStorage.setItem('li_totalTematicas1', totalLibreP1);
+        localStorage.setItem('li_totalLibre1', totalLibreP1);
 
     }
 

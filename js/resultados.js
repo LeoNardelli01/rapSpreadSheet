@@ -55,6 +55,18 @@ $(function(){
     let pe_escenap2 = localStorage.getItem('pe_escenap2')
     let pe_totalP2 = localStorage.getItem('pe_totalPersonajes2');
 
+    //variables LIBRE
+    let li_totalPatronesP1 = localStorage.getItem('li_totalPatronesP1');
+    let li_tecnicasp1 = localStorage.getItem('li_tecnicasp1');
+    let li_flowp1 = localStorage.getItem('li_flowp1');
+    let li_escenap1 = localStorage.getItem('li_escenap1')
+    let li_totalP1 = localStorage.getItem('li_totalLibre1');
+
+    let li_totalPatronesP2 = localStorage.getItem('li_totalPatronesP2');
+    let li_tecnicasp2 = localStorage.getItem('li_tecnicasp2');
+    let li_flowp2 = localStorage.getItem('li_flowp2');
+    let li_escenap2 = localStorage.getItem('li_escenap2')
+    let li_totalP2 = localStorage.getItem('li_totalLibre2');
 
     //-----------------
 
@@ -112,9 +124,22 @@ $(function(){
     $("#pe_resEscenaP2").html(pe_escenap2);
     $("#pe_totalP2").html(pe_totalP2);
 
+    // -------- -------- ---------
+    $("#li_resPatronesP1").html(li_totalPatronesP1);
+    $("#li_resTecnicasP1").html(li_tecnicasp1);
+    $("#li_resFlowP1").html(li_flowp1);
+    $("#li_resEscenaP1").html(li_escenap1)
+    $("#li_totalP1").html(li_totalP1);
 
-    var resFinalesP1 = parseInt(em_totalP1) + parseInt(hm_totalP1) + parseInt(te_totalP1) + parseInt(pe_totalP1);
-    var resFinalesP2 = parseInt(em_totalP2) + parseInt(hm_totalP2) + parseInt(te_totalP2) + parseInt(pe_totalP2);
+    $("#li_resPatronesP2").html(li_totalPatronesP2);
+    $("#li_resTecnicasP2").html(li_tecnicasp2);
+    $("#li_resFlowP2").html(li_flowp2);
+    $("#li_resEscenaP2").html(li_escenap2);
+    $("#li_totalP2").html(li_totalP2);
+
+
+    var resFinalesP1 = parseInt(em_totalP1) + parseInt(hm_totalP1) + parseInt(te_totalP1) + parseInt(pe_totalP1) + parseInt(li_totalP1);
+    var resFinalesP2 = parseInt(em_totalP2) + parseInt(hm_totalP2) + parseInt(te_totalP2) + parseInt(pe_totalP2) + parseInt(li_totalP2);
 
     $("#resFinalP1").html(resFinalesP1);
     $("#resFinalP2").html(resFinalesP2);
@@ -166,7 +191,7 @@ $(function(){
 
 
 
-
+    // chart BARRAS
     var chart1 = document.getElementById('chart1').getContext('2d');
 
     var chart1_bar = new Chart(chart1,{
@@ -226,6 +251,69 @@ $(function(){
         }
 
     });
+
+    // chart LINE
+    var chart2 = document.getElementById('chart2').getContext('2d');
+
+    var chart2_line = new Chart(chart2,{
+        type:"line",
+        data: {
+          labels:['Easy', 'Hard', 'Temat.', 'Person.', 'Libre', 'Deluxe'],
+          datasets: [
+            {
+            label: player1,
+            data: [parseInt(em_totalP1), parseInt(hm_totalP1), parseInt(te_totalP1), parseInt(pe_totalP1), parseInt(li_totalP1) ],
+
+            borderColor: 'rgb(0, 98, 255)',
+            borderWidth: 1
+          },{
+            label: player2,
+            data: [parseInt(em_totalP2), parseInt(hm_totalP2), parseInt(te_totalP2), parseInt(pe_totalP2), parseInt(li_totalP2)],
+
+            borderColor: 'rgb(255, 0, 0)',
+            borderWidth: 1
+          }
+        ]},
+        options: {
+          layout: {
+              padding: {
+                  left: 50,
+                  right: 50,
+                  top: 10,
+                  bottom: 10
+              }
+          },
+          legend:{
+            labels:{
+              fontColor: 'white',
+              fontFamily: 'Russo One',
+              display: false
+            }
+          },
+          scales: {
+            xAxes: [{
+
+              ticks: {
+                fontColor: 'white',
+                fontSize: 14,
+                fontFamily: 'Russo One'
+              }
+            }],
+            yAxes: [{
+              display: false,
+              ticks: {
+                beginAtZero: true,
+                min: 0,
+                max: 100,
+                fontSize: 18
+              }
+            }]
+          }
+        }
+
+    });
+
+
     /*
     BATALLOMETRO
     */

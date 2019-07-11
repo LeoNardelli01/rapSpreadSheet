@@ -7,71 +7,94 @@
 .container-fluid {
   padding-left: 0px !important;
   padding-right: 0px !important;
+  background-image: linear-gradient(to bottom, blue , white);
 }
-header {
-  padding: 5px;
+.segundaRonda{
+  background-image: linear-gradient(to top, red , white);
+
 }
+
+
+hr{
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
+}
+
+header a{
+  margin: 10px;
+}
+header h3{
+  padding-top: 50px;
+}
+.players {
+  padding-top: 15px;
+  background-color: black;
+  box-shadow:  0px 0px 10px black;
+}
+#nombre1 {
+  font-size: 20px;
+  font-family: 'Russo One', sans-serif;
+  color: white;
+  text-shadow: 0px 0px 15px blue;
+}
+
+#nombre2 {
+  font-size: 20px;
+  font-family: 'Russo One', sans-serif;
+  color: white;
+  text-shadow: 0px 0px 15px red;
+}
+
+
 .titulo {
   font-family: 'Russo One', sans-serif;
   font-size: 50px;
-  color: black;
-}
-.rapper1{
-
-}
-#rap1{
-  font-size: 30px;
-  font-family: 'Russo One', sans-serif;
   color: white;
-  text-shadow: 0px 0px 12px blue;
-}
-
-.rapper2{
+  text-shadow: 0px 0px 12px red, 0 0 18px blue, 0 0 25px black;
 
 }
-#rap2{
-  font-size: 30px;
-font-family: 'Russo One', sans-serif;
-  color: white;
-  text-shadow: 0px 0px 12px red;
-}
+
+
 
 select{
-  background-color: grey;
+  background-color: black;
   color: white;
+  font-family: 'play', sans-serif !important;
   text-align-last: center;
-  width: 55px;
-  height: 38px;
+  width: 70px;
+  height: 40px;
   border: none;
+
 
 }
 .escenario{
 
 
 }
-.segundaRonda {
-  padding-top: 100px;
+.rapper1{
+}
+.rapper2{
 }
 
-#pSegundaRonda{
-  z-index: 1;
-  background-color: white;
-
-}
 .escenario select{
-  margin-top: 15px;
-position: relative;
-left:50%;
-transform: translate(-50%);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 
 }
 .final{
   width: auto;
   height: auto;
-  background-color: rgba(68, 25, 242, 0.51);
+  padding-bottom: 20px;
 }
 
+.final h2{
+  font-size: 20px !important;
+}
 .final select{
+
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -80,12 +103,23 @@ transform: translate(-50%);
   display: flex;
   padding-left: 5%;
   padding-right: 5%;
+  font-family: 'Russo One', sans-serif;
 }
 
-#volverMenu {
 
-  max-width: 70%;
+#volverMenu {
+  background: linear-gradient(0.70turn, red, blue) !important;
+  color: white;
+  margin-top: 20px;
+  width: 150px;
+  margin-bottom: 20px;
   position: relative;
   left: 50%;
   transform: translate(-50%);
+  font-family: 'Russo One', sans-serif;
+}
+
+.segRonda {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

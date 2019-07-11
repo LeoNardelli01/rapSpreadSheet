@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HARD MODE</title>
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/tematicas.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +14,29 @@
   <body>
     <div class="container-fluid">
 
-      <header class="sticky-top">
+      <header class="">
+        <!--
         <a href="../menu/menu.html" class="btn btn-dark">Volver</a>
-        <h3 class="text-center titulo">Tématicas</h3>
-        <p class="text-center">Primera ronda</p>
+        BOTON VOLVER
+      -->
+      <div class="row players fixed-top">
 
-        <div class="row sticky-top">
-          <div class="col">
-            <p id="rap1" class="text-uppercase text-center"></p>
-          </div>
-          <div class="col">
-            <p id="rap2" class="text-uppercase text-center"></p>
-          </div>
+        <div class="col">
+          <h4 id="nombre1" class="text-center text-uppercase"></h4>
+
         </div>
+        <div class="col">
+          <h4 id="nombre2" class="text-center text-uppercase"></h4>
+
+        </div>
+      </div>
+      <div class="">
+        <h3 class="text-center titulo">Temáticas</h3>
+
+      </div>
+
       </header>
+
 
       <div class="escenario row">
         <div class="rapper1 col">
@@ -174,11 +183,9 @@
     </div>
 
     <div class="container-fluid segundaRonda">
-      <header>
-
-        <p id="pSegundaRonda" class="text-center">Segunda ronda</p>
-
-      </header>
+      <div class="segRonda">
+        <h5 class="text-center">Segunda Ronda</h5>
+      </div>
 
       <div class="escenario row">
         <div class="rapper1 col">
@@ -321,7 +328,7 @@
 
 
 
-        <a id="volverMenu" href="../menu/menu.html" class="btn btn-success btn-lg btn-block">Terminar</a>
+        <a id="volverMenu" href="../menu/menu.html" class="btn btn-lg btn-block">Puntuar</a>
 
 
       </div>

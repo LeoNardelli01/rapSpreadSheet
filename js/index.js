@@ -1,6 +1,7 @@
 
 $(function(){
-
+    localStorage.clear();
+    
     var btnEmpezar = $("#empezar");
 
     btnEmpezar.click(function(e){
