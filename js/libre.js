@@ -31,29 +31,44 @@ $(function(){
 
     } else {
         //Variable checkbox respuesta P1
-
-
-      /*
-      if ($("#checkPatron1p1").is(':checked')) {
-        checkTotal1 += 1;
-
-      } else if($("#checkPatron2p1").is(':checked')){
-        checkTotal1 +=1;
-
-      } else if($("#checkPatron3p1").is(':checked')){
-        checkTotal1 +=1;
-
-      } else if($("#checkPatron4p1").is(':checked')){
-        checkTotal1 +=1;
-
-      } else if($("#checkPatron5p1").is(':checked')){
-        checkTotal1 +=1;
-
-      } else if($("#checkPatron6p1").is(':checked')){
+      if ($("#checkPatron1p1").is(':checked') ) {
         checkTotal1 +=1;
       }
-      */
+      if ($("#checkPatron2p1").is(':checked') ) {
+        checkTotal1 +=1;
+      }
+      if ($("#checkPatron3p1").is(':checked') ) {
+        checkTotal1 +=1;
+      }
+      if ($("#checkPatron4p1").is(':checked') ) {
+        checkTotal1 +=1;
+      }
+      if ($("#checkPatron5p1").is(':checked') ) {
+        checkTotal1 +=1;
+      }
+      if ($("#checkPatron6p1").is(':checked') ) {
+        checkTotal1 +=1;
+      }
 
+      //variable checkbox respuesta P2
+      if ($("#checkPatron1p2").is(':checked') ) {
+        checkTotal2 +=1;
+      }
+      if ($("#checkPatron2p2").is(':checked') ) {
+        checkTotal2 +=1;
+      }
+      if ($("#checkPatron3p2").is(':checked') ) {
+        checkTotal2 +=1;
+      }
+      if ($("#checkPatron4p2").is(':checked') ) {
+        checkTotal2 +=1;
+      }
+      if ($("#checkPatron5p2").is(':checked') ) {
+        checkTotal2 +=1;
+      }
+      if ($("#checkPatron6p2").is(':checked') ) {
+        checkTotal2 +=1;
+      }
 
       //variables del jugador 1
 
@@ -65,7 +80,7 @@ $(function(){
       var patron6p1 = parseInt($(".patron6p1").val()) + parseInt($(".vpatron6p1").val());
 
 
-      totalPatronesP1 = patron1p1+patron2p1+patron3p1+patron4p1+patron5p1+patron6p1;
+      totalPatronesP1 = patron1p1+patron2p1+patron3p1+patron4p1+patron5p1+patron6p1+checkTotal1;
 
       //-------------------
       tecnicasp1 = parseInt($(".tecnicasp1").val()) + parseInt($(".vtecnicasp1").val());
@@ -84,7 +99,7 @@ $(function(){
       var patron5p2 = parseInt($(".patron5p2").val()) + parseInt($(".vpatron5p2").val());
       var patron6p2 = parseInt($(".patron6p2").val()) + parseInt($(".vpatron6p2").val());
 
-      totalPatronesP2 = patron1p2+patron2p2+patron3p2+patron4p2+patron5p2+patron6p2;
+      totalPatronesP2 = patron1p2+patron2p2+patron3p2+patron4p2+patron5p2+patron6p2+checkTotal2;
       //----
       tecnicasp2 = parseInt($(".tecnicasp2").val()) + parseInt($(".vtecnicasp1").val());
       flowp2 = parseInt($(".flowp2").val()) + parseInt($(".vflowp2").val());

@@ -70,7 +70,18 @@ select{
   position: relative;
   left: 50%;
   transform: translate(-50%);
+}
 
+.check{
+  padding: 15px;
+
+}
+.escenario input[type='checkbox']{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .final{
   width: auto;

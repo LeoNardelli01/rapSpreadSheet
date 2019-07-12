@@ -5,18 +5,20 @@ $(function(){
   $("#nombre1").html(player1);
   $("#nombre2").html(player2);
 
-
-  let totalPersonajes1;
   let totalPatronesP1;
   let tecnicasP1;
   let flowP1;
   let escenaP1;
+  let totalPersonajes1;
+  let checkTotal1 = 0;
 
-  let totalPersonajes2;
   let totalPatronesP2;
   let tecnicasP2;
   let flowP2;
   let escenaP2;
+  let totalPersonajes2;
+  let checkTotal2 = 0;
+
 
   $("#volverMenu").click(function(e){
     var revisado = false;
@@ -28,6 +30,16 @@ $(function(){
 
     } else {
 
+      //checked
+      if ($("#checkPatron1p1").is(':checked') ) {
+        checkTotal1 +=1;
+      }
+
+
+
+
+
+      
       //variables del jugador 1
       var patron1p1 = parseInt($(".patron1p1").val());
       var patron2p1 = parseInt($(".patron2p1").val());
