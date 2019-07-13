@@ -14,22 +14,35 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143820322-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-143820322-1');
+    </script>
+
+
   </head>
   <body>
     <div class="container-fluid">
       <header>
         <div class="logo">
-          <h1 class="text-center font-weight-bolder">RAP SpreadsheeT</h1>
-
+          <h1 class="text-center font-weight-bolder">RAP spreadsheet</h1>
+          <p id="typedJS" class="text-center typed"></p>
         </div>
       </header>
+
+
+
       <section class="players">
-
-        <p id="typedJS" class="text-center typed"></p>
-
         <input id="r1" type="text" name="" value="" placeholder="Rapper 1" maxlength="8"> <br>
         <input id="r2" type="text" name="" value="" placeholder="Rapper 2" maxlength="8"> <br>
-        <a id="empezar" href="menu/menu.html" class="btn">Comenzar</a>
+        <a id="empezar" href="menu/menu.html" class="btn fixed-bottom">Comenzar</a>
+
       </section>
     </div>
 

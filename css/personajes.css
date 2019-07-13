@@ -73,9 +73,16 @@ select{
 }
 
 .check{
-  padding: 15px;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding-top: 15px;
 
 }
+
+.rapper1, .rapper2 {
+  padding: 0px !important;
+}
+
 .escenario input[type='checkbox']{
   position: relative;
   left: 50%;
