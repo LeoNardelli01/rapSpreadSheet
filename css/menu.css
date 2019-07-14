@@ -5,10 +5,12 @@
 }
 .container-fluid{
   overflow: hidden;
+  height: 100%;
+
 }
 
 header{
-  padding-top: 45px;
+  padding-top: 40px;
 }
 .players {
   padding-top: 15px;
@@ -29,13 +31,6 @@ header{
   text-shadow: 0px 0px 10px red;
 }
 
-.menu {
- position: absolute;
- left: 50%;
- top: 330px;
- transform: translate(-50%, -50%);
-}
-
 .menu a {
   font-family: 'Russo One', sans-serif;
   font-size: 25px;
@@ -43,7 +38,7 @@ header{
 
 }
 .menu .tema{
-  width: 50vw!important;
+  width: 40vw!important;
   margin-top: 20px;
 
 }
@@ -54,14 +49,15 @@ header{
 
 .terminarBatalla{
   margin-bottom: 10px;
-  max-width: 80%;
-  margin-left: 10%;
+  padding-top: 40px;
+
 
 }
 .terminarBatalla a{
   color: black;
   font-family: 'Russo One', sans-serif;
   font-size: 25px;
+
 }
 
 #btn-terminarBatalla {
@@ -70,10 +66,10 @@ header{
   margin-top: 20px;
   width: 150px;
   margin-bottom: 20px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
   font-family: 'Russo One', sans-serif;
+  position: relative;
+  left:50%;
+  transform: translate(-50%);
 }
 
 .btn-outline-danger:active {
@@ -84,9 +80,16 @@ header{
 #typedJS {
   font-family: 'play', sans-serif;
   font-size: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 #easyMode, #hardMode, #tematicas,
 #personajes, #libre, #deluxe {
   background-color: rgba(145, 145, 145, 0.51);
 
+}
+
+#menu-margin{
+  margin-top: 40px;
 }
