@@ -157,7 +157,12 @@ $(function(){
 
 
     if (difTotales <= 5) {
-      var btn_replica = "<a id='replica' class='btn' href='replica.html'>Empezar Replica</a>";
+
+      //var btn_replica = "<a id='replica' class='btn' href='replica.html'>Empezar Replica</a>";
+      /*
+      activar este boton cuando pueda hacer lo de las replicas
+      */
+      var btn_replica = "<a id='gano' class='btn btn-lg' href='../index.html'>Nueva Batalla</a>";
       $("#replica").append(btn_replica);
       $("#ganador").html("REPLICA!");
 
