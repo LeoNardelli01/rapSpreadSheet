@@ -61,8 +61,16 @@ $(function(){
             resFinalesP2 += parseInt(localStorage.getItem('li_totalLibre2'));
             terminados += 1;
           }
+          if (localStorage.getItem('de_totalDeluxe1') === null ) {
+            $("#deluxe").css('background-color', 'rgba(145, 145, 145, 0.51');
+          } else{
+            $("#deluxe").css('background-color', "rgba(17, 213, 78, 0.39)");
+            $("#deluxe").css('box-shadow', '0px 0px 15px green');
+            resFinalesP1 += parseInt(localStorage.getItem('de_totalDeluxe1'));
+            resFinalesP2 += parseInt(localStorage.getItem('de_totalDeluxe2'));
+            terminados += 1;
+          }
 
-          //aca hacer boton por boton gris o verde
 
 
 
@@ -163,10 +171,24 @@ $(function(){
       $("#nombre1").html(player1);
       $("#nombre2").html(player2);
 
+      break;
+
+      case 6:
+      var options = {
+        strings: ["<h4>Deluxe Terminado</h4>", "<h4>" + localStorage.getItem('de_totalDeluxe1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('de_totalDeluxe2') + " Pts Para " + player2 +"</h4>", "<h4>Finaliza para ver los resultados</h4>", "<h4></h4>" ],
+        typeSpeed: 70,
+        showCursor: false,
+        smartBackspace: true
+      }
+      var typed = new Typed(".typed", options);
+
+      $("#nombre1").html(player1);
+      $("#nombre2").html(player2);
+
       //activar termianr batalla
       $("#btn-terminarBatalla").removeClass("disabled");
 
-      
+
   }//fin switch
 
 

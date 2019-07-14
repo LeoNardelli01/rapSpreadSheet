@@ -68,6 +68,20 @@ $(function(){
     let li_escenap2 = localStorage.getItem('li_escenap2')
     let li_totalP2 = localStorage.getItem('li_totalLibre2');
 
+    //variables Deluxe
+    let de_totalPatronesP1 = localStorage.getItem('de_totalPatronesP1');
+    let de_tecnicasp1 = localStorage.getItem('de_tecnicasp1');
+    let de_flowp1 = localStorage.getItem('de_flowp1');
+    let de_escenap1 = localStorage.getItem('de_escenap1')
+    let de_totalP1 = localStorage.getItem('de_totalDeluxe1');
+
+    let de_totalPatronesP2 = localStorage.getItem('de_totalPatronesP2');
+    let de_tecnicasp2 = localStorage.getItem('de_tecnicasp2');
+    let de_flowp2 = localStorage.getItem('de_flowp2');
+    let de_escenap2 = localStorage.getItem('de_escenap2')
+    let de_totalP2 = localStorage.getItem('de_totalDeluxe2');
+
+
     //-----------------
 
     $("#player1").html(player1);
@@ -136,10 +150,23 @@ $(function(){
     $("#li_resFlowP2").html(li_flowp2);
     $("#li_resEscenaP2").html(li_escenap2);
     $("#li_totalP2").html(li_totalP2);
+    // ------------------------------
+    $("#de_resPatronesP1").html(de_totalPatronesP1);
+    $("#de_resTecnicasP1").html(de_tecnicasp1);
+    $("#de_resFlowP1").html(de_flowp1);
+    $("#de_resEscenaP1").html(de_escenap1)
+    $("#de_totalP1").html(de_totalP1);
+
+    $("#de_resPatronesP2").html(de_totalPatronesP2);
+    $("#de_resTecnicasP2").html(de_tecnicasp2);
+    $("#de_resFlowP2").html(de_flowp2);
+    $("#de_resEscenaP2").html(de_escenap2);
+    $("#de_totalP2").html(de_totalP2);
 
 
-    var resFinalesP1 = parseInt(em_totalP1) + parseInt(hm_totalP1) + parseInt(te_totalP1) + parseInt(pe_totalP1) + parseInt(li_totalP1);
-    var resFinalesP2 = parseInt(em_totalP2) + parseInt(hm_totalP2) + parseInt(te_totalP2) + parseInt(pe_totalP2) + parseInt(li_totalP2);
+
+    var resFinalesP1 = parseInt(em_totalP1) + parseInt(hm_totalP1) + parseInt(te_totalP1) + parseInt(pe_totalP1) + parseInt(li_totalP1) + parseInt(de_totalP1);
+    var resFinalesP2 = parseInt(em_totalP2) + parseInt(hm_totalP2) + parseInt(te_totalP2) + parseInt(pe_totalP2) + parseInt(li_totalP2) + parseInt(de_totalP2);
 
     $("#resFinalP1").html(resFinalesP1);
     $("#resFinalP2").html(resFinalesP2);
@@ -181,16 +208,16 @@ $(function(){
     // CHART.JS
 
     //aplico regla de 3 para sacar porcentajes en relacion al maximo
-    var totalPatronesP1 = (parseInt(em_totalPatronesP1) + parseInt(hm_totalPatronesP1) + parseInt(te_totalPatronesP1) + parseInt(pe_totalPatronesP1) + parseInt(li_totalPatronesP1)) * 100 / 208;
-    var totalTecnicasP1 = (parseInt(em_tecnicasp1) + parseInt(hm_tecnicasp1) + parseInt(te_tecnicasp1) + parseInt(pe_tecnicasp1) + parseInt(li_tecnicasp1)) * 100 / 16;
-    var totalFlowP1 = (parseInt(em_flowp1) + parseInt(hm_flowp1) + parseInt(te_flowp1) + parseInt(pe_flowp1) + parseInt(li_flowp1)) * 100 / 16;
-    var totalEscenaP1 = (parseInt(em_escenap1) + parseInt(hm_escenap1) + parseInt(te_escenap1) + parseInt(pe_escenap1) + parseInt(li_escenap1)) * 100 / 16;
+    var totalPatronesP1 = (parseInt(em_totalPatronesP1) + parseInt(hm_totalPatronesP1) + parseInt(te_totalPatronesP1) + parseInt(pe_totalPatronesP1) + parseInt(li_totalPatronesP1) + parseInt(de_totalPatronesP1)) * 100 / 208;
+    var totalTecnicasP1 = (parseInt(em_tecnicasp1) + parseInt(hm_tecnicasp1) + parseInt(te_tecnicasp1) + parseInt(pe_tecnicasp1) + parseInt(li_tecnicasp1) + parseInt(de_tecnicasp1)) * 100 / 16;
+    var totalFlowP1 = (parseInt(em_flowp1) + parseInt(hm_flowp1) + parseInt(te_flowp1) + parseInt(pe_flowp1) + parseInt(li_flowp1) + parseInt(de_flowp1)) * 100 / 16;
+    var totalEscenaP1 = (parseInt(em_escenap1) + parseInt(hm_escenap1) + parseInt(te_escenap1) + parseInt(pe_escenap1) + parseInt(li_escenap1) + parseInt(de_escenap1)) * 100 / 16;
 
 
-    var totalPatronesP2 = (parseInt(em_totalPatronesP2) + parseInt(hm_totalPatronesP2) + parseInt(te_totalPatronesP2) + parseInt(pe_totalPatronesP2) + parseInt(li_totalPatronesP2)) * 100 / 208;
-    var totalTecnicasP2 = (parseInt(em_tecnicasp2) + parseInt(hm_tecnicasp2) + parseInt(te_tecnicasp2) + parseInt(pe_tecnicasp2) + parseInt(li_tecnicasp2)) * 100 / 16;
-    var totalFlowP2 = (parseInt(em_flowp2) + parseInt(hm_flowp2) + parseInt(te_flowp2) + parseInt(pe_flowp2) + parseInt(li_flowp2)) * 100 / 16;
-    var totalEscenaP2 = (parseInt(em_escenap2) + parseInt(hm_escenap2) + parseInt(te_escenap2) + parseInt(pe_escenap2) + parseInt(li_escenap2)) * 100 / 16;
+    var totalPatronesP2 = (parseInt(em_totalPatronesP2) + parseInt(hm_totalPatronesP2) + parseInt(te_totalPatronesP2) + parseInt(pe_totalPatronesP2) + parseInt(li_totalPatronesP2) + parseInt(de_totalPatronesP2)) * 100 / 208;
+    var totalTecnicasP2 = (parseInt(em_tecnicasp2) + parseInt(hm_tecnicasp2) + parseInt(te_tecnicasp2) + parseInt(pe_tecnicasp2) + parseInt(li_tecnicasp2) + parseInt(de_tecnicasp2)) * 100 / 16;
+    var totalFlowP2 = (parseInt(em_flowp2) + parseInt(hm_flowp2) + parseInt(te_flowp2) + parseInt(pe_flowp2) + parseInt(li_flowp2) + parseInt(de_flowp2)) * 100 / 16;
+    var totalEscenaP2 = (parseInt(em_escenap2) + parseInt(hm_escenap2) + parseInt(te_escenap2) + parseInt(pe_escenap2) + parseInt(li_escenap2) + parseInt(de_escenap2)) * 100 / 16;
 
     var batallometro = (parseInt(resFinalesP1) + parseInt(resFinalesP2)) * 100 / 512;
 
@@ -267,12 +294,12 @@ $(function(){
           datasets: [
             {
             label: player1,
-            data: [(parseInt(em_totalP1) * 100 / 30).toFixed(2), (parseInt(hm_totalP1) * 100 /30).toFixed(2), (parseInt(te_totalP1) * 100 / 44).toFixed(2), (parseInt(pe_totalP1) * 100 / 36).toFixed(2), (parseInt(li_totalP1) * 100 / 66).toFixed(2) ],
+            data: [(parseInt(em_totalP1) * 100 / 30).toFixed(2), (parseInt(hm_totalP1) * 100 /30).toFixed(2), (parseInt(te_totalP1) * 100 / 44).toFixed(2), (parseInt(pe_totalP1) * 100 / 36).toFixed(2), (parseInt(li_totalP1) * 100 / 66).toFixed(2), (parseInt(de_totalP1) * 100 / 50).toFixed(2) ],
             borderColor: 'rgb(0, 98, 255)',
             borderWidth: 2
           },{
             label: player2,
-            data: [(parseInt(em_totalP2) * 100 / 30).toFixed(2), (parseInt(hm_totalP2) * 100 / 30).toFixed(2), (parseInt(te_totalP2) * 100 / 44).toFixed(2), (parseInt(pe_totalP2) * 100 / 36).toFixed(2), (parseInt(li_totalP2) * 100 / 66).toFixed(2)],
+            data: [(parseInt(em_totalP2) * 100 / 30).toFixed(2), (parseInt(hm_totalP2) * 100 / 30).toFixed(2), (parseInt(te_totalP2) * 100 / 44).toFixed(2), (parseInt(pe_totalP2) * 100 / 36).toFixed(2), (parseInt(li_totalP2) * 100 / 66).toFixed(2), (parseInt(de_totalP2) * 100 /50).toFixed(2)],
             borderColor: 'rgb(255, 0, 0)',
             borderWidth: 2
           }
