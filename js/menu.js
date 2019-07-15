@@ -93,7 +93,7 @@ $(function(){
       case 1:  // EASY MODE TERMINADO
 
       var options = {
-        strings: ["<h4>Easy Mode Terminado</h4>", "<h4>" + localStorage.getItem('em_totalEasyMode1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('em_totalEasyMode2') + " Pts Para " + player2 +"</h4>", "<h4>Preparate para el Hard Mode</h4>", "<h4></h4>" ],
+        strings: ["<h4>Easy Mode Terminado</h4>", "<h4>" + localStorage.getItem('em_totalEasyMode1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('em_totalEasyMode2') + " Pts Para " + player2 +"</h4>", "<h4>Prepárate para el Hard Mode</h4>", "<h4></h4>" ],
         typeSpeed: 70,
         showCursor: false,
         smartBackspace: true
@@ -110,7 +110,7 @@ $(function(){
 
       case 2:  // HARD MODE TERMINADO
       var options = {
-        strings: ["<h4>Hard Mode Terminado</h4>", "<h4>" + localStorage.getItem('hm_totalHardMode1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('hm_totalHardMode2') + " Pts Para " + player2 +"</h4>", "<h4>Preparate para Temáticas</h4>", "<h4></h4>" ],
+        strings: ["<h4>Hard Mode Terminado</h4>", "<h4>" + localStorage.getItem('hm_totalHardMode1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('hm_totalHardMode2') + " Pts Para " + player2 +"</h4>", "<h4>Prepárate para Temáticas</h4>", "<h4></h4>" ],
         typeSpeed: 70,
         showCursor: false,
         smartBackspace: true
@@ -128,7 +128,7 @@ $(function(){
 
       case 3: //Tematicas terminado
         var options = {
-          strings: ["<h4>Temáticas Terminado</h4>", "<h4>" + localStorage.getItem('te_totalTematicas1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('te_totalTematicas2') + " Pts Para " + player2 +"</h4>", "<h4>Preparate para Personajes</h4>", "<h4></h4>" ],
+          strings: ["<h4>Temáticas Terminado</h4>", "<h4>" + localStorage.getItem('te_totalTematicas1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('te_totalTematicas2') + " Pts Para " + player2 +"</h4>", "<h4>Prepárate para Personajes</h4>", "<h4></h4>" ],
           typeSpeed: 70,
           showCursor: false,
           smartBackspace: true
@@ -145,7 +145,7 @@ $(function(){
 
       case 4: // personajes terminado
       var options = {
-        strings: ["<h4>Personajes Terminado</h4>", "<h4>" + localStorage.getItem('pe_totalPersonajes1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('pe_totalPersonajes2') + " Pts Para " + player2 +"</h4>", "<h4>Se viene el minuto a sangre..</h4>", "<h4></h4>" ],
+        strings: ["<h4>Personajes Terminado</h4>", "<h4>" + localStorage.getItem('pe_totalPersonajes1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('pe_totalPersonajes2') + " Pts Para " + player2 +"</h4>", "<h4>Se viene el minuto libre...</h4>", "<h4></h4>" ],
         typeSpeed: 70,
         showCursor: false,
         smartBackspace: true
@@ -160,7 +160,7 @@ $(function(){
 
       case 5:
       var options = {
-        strings: ["<h4>Libre Terminado</h4>", "<h4>" + localStorage.getItem('li_totalLibre1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('li_totalLibre2') + " Pts Para " + player2 +"</h4>", "<h4>Preparate para Deluxe</h4>", "<h4></h4>" ],
+        strings: ["<h4>Libre Terminado</h4>", "<h4>" + localStorage.getItem('li_totalLibre1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('li_totalLibre2') + " Pts Para " + player2 +"</h4>", "<h4>Prepárate para Deluxe</h4>", "<h4></h4>" ],
         typeSpeed: 70,
         showCursor: false,
         smartBackspace: true

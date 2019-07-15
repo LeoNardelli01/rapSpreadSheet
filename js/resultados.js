@@ -197,11 +197,11 @@ $(function(){
       var btn_ganoP1 = "<a id='gano' class='btn btn-lg' href='../index.html'>Nueva Batalla</a>";
       $("#gano").append(btn_ganoP1);
 
-      $("#ganador").html("GANO " + player1);
+      $("#ganador").html("Ganó " + player1);
     } else {
         var btn_ganoP2 = "<a id='gano' class='btn btn-lg' href='../index.html'>Nueva Batalla</a>";
         $("#gano").append(btn_ganoP2);
-        $("#ganador").html("GANO " + player2);
+        $("#ganador").html("Ganó " + player2);
     }
 
 
