@@ -187,7 +187,7 @@ $(function(){
 
       //activar termianr batalla
       $("#btn-terminarBatalla").removeClass("disabled");
-
+      
 
   }//fin switch
 

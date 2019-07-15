@@ -351,7 +351,17 @@ $(function(){
 
 
     $(".progressBar").width(batallometro + "%");
-    $(".progressBar").html(batallometro.toFixed(2) + "%");
+
+    if (batallometro < 35 ) {
+        $(".progressBar").html(batallometro.toFixed(2) + "% ");
+    } else  if (batallometro > 35 && batallometro < 50){
+        $(".progressBar").html(batallometro.toFixed(2) + "% " + " Buena");
+    } else if (batallometro > 50 && batallometro < 70){
+        $(".progressBar").html(batallometro.toFixed(2) + "% " + " Excelente!");
+    } else if (batallometro > 70){
+      $(".progressBar").html(batallometro.toFixed(2) + "% " + " Epica!");
+    }
+
     $(".h6-batallometro").html((parseInt(resFinalesP1) + parseInt(resFinalesP2)) + " Pts totales (nivel de batalla)")
 
     //nueva batalla btn
