@@ -366,7 +366,7 @@ $(function(){
 
     //nueva batalla btn
     $("#gano").click(function(e){
-      var r = confirm("¿Estás seguro?\n Esto no se podra deshacer");
+      var r = confirm("Comenzar batalla\n ¿Estás seguro?");
 
       if (r) {
         localStorage.clear();
