@@ -1,4 +1,9 @@
 $(function(){
+  (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-1197109744462737",
+          enable_page_level_ads: true
+     });
+
   //PLAYERS
   let player1 = localStorage.getItem('rap1');
   let player2 = localStorage.getItem('rap2');
@@ -187,7 +192,7 @@ $(function(){
 
       //activar termianr batalla
       $("#btn-terminarBatalla").removeClass("disabled");
-      
+
 
   }//fin switch
 
