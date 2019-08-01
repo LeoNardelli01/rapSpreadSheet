@@ -10,7 +10,7 @@
 }
 
 header{
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .players {
@@ -39,8 +39,8 @@ header{
 
 }
 .menu .tema{
-  width: 47vw!important;
-  margin-top: 20px;
+  width: 247px !important;
+  margin-top: 10px;
 
 }
 
