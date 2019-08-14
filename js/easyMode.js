@@ -21,8 +21,8 @@ $(function(){
   let escenaP2;
 
   $("#volverMenu").click(function(e){
-    var revisado = false;
-    var r = confirm("Quieres continuar?\n no podras cambiarlos despues");
+
+    var r = confirm("Quieres continuar?\n no podrás cambiarlos después");
 
 
     if (!r) {
