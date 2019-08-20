@@ -55,12 +55,12 @@ select{
   color: white;
   font-family: 'play', sans-serif !important;
   text-align-last: center;
-  width: 100px;
-  height: 50px;
+  width: 60px;
+  height: 40px;
   border: none;
 }
 .escenario{
-  height: 50vh;
+  height: 100%;
 }
 
 .escenario select{
@@ -72,19 +72,21 @@ select{
 }
 .final{
   width: auto;
-  height: 40vh;
   margin-top: 40px;
   padding-bottom: 20px;
   background-image: linear-gradient(to top, blue , white);
 }
 
 .final h2{
-  font-size: 20px !important;
+  font-size: 16px !important;
+  max-width: 33%;
 }
 
 .final select{
   margin-left: 25px;
   margin-right: 25px;
+  max-width: 60px;
+  max-height: 40px;
 }
 
 .tecnicas, .flow, .escena{
@@ -96,8 +98,8 @@ select{
 }
 
 #volverMenu {
-  background: linear-gradient(0.40turn, red, white, blue) !important;
-  color: black;
+  background: linear-gradient(0.70turn, red, blue) !important;
+  color: white;
   margin-top: 20px;
   width: 150px;
   margin-bottom: 20px;
@@ -105,4 +107,12 @@ select{
   left: 50%;
   transform: translate(-50%);
   font-family: 'Russo One', sans-serif;
+}
+
+a .volverAtras {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  z-index: 1000;
+  background-color: rgba(175, 169, 169, 0.55);
 }

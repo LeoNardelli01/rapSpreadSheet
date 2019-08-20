@@ -78,7 +78,7 @@ $(function(){
   switch (terminados) {
     case 0:      //ARRANCA EL MENU
       var options = {
-        strings: ["<h4>Bienvenido a RAP SpreadsheeT</h4>", "<h4>Formato FMS</h4>","<h4>Buena Suerte " + player2 + " y " + player1 + "" + "</h4>", "<h4>3...2...1... TIEMPO!!</h4>", "<h4></h4>" ],
+        strings: ["<h4>Bienvenido a RAP SpreadsheeT</h4>", "<h4>Formato FMS</h4>","<h4>(Publicite aquí)</h4>", "<h4>3...2...1... TIEMPO!!</h4>", "<h4></h4>" ],
         typeSpeed: 70,
         showCursor: false,
         smartBackspace: true
