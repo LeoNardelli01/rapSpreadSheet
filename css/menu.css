@@ -3,13 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container-fluid{
-  overflow: hidden;
-  height: 100vh;
-
+.publicidadIzquierda, .publicidadDerecha {
+  background-image: linear-gradient(to top, blue , red);
+}
+.publicidadIzquierda p, .publicidadDerecha p{
+  color: white;
+  font-size: 14px;
+  text-shadow: 10px 5px 3px black;
+  padding-bottom: 30px;
 }
 
 
+.container-fluid{
+  overflow: hidden;
+  height: 100vh;
+  box-shadow: 0 0 40px black;
+  z-index: 100;
+}
 
 .players {
   padding-top: 15px;
