@@ -19,6 +19,7 @@
   height: 100vh;
   box-shadow: 0 0 40px black;
   z-index: 100;
+  padding: 0px !important;
 }
 
 .players {
@@ -74,6 +75,7 @@
   background: linear-gradient(0.70turn, red, blue) !important;
   color: white;
   margin-top: 20px;
+  margin-bottom: 50px;
   width: 150px;
   margin-bottom: 20px;
   font-family: 'Russo One', sans-serif;
