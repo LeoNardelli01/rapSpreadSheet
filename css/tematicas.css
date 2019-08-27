@@ -4,10 +4,30 @@
   box-sizing: border-box;
 }
 
+.publicidadIzquierda, .publicidadDerecha {
+  background-image: linear-gradient(to top, red , blue);
+}
+.publicidadIzquierda p, .publicidadDerecha p{
+  color: white;
+  font-size: 14px;
+  text-shadow: 10px 5px 3px black;
+  padding-bottom: 30px;
+}
+.col{
+  padding: 0px !important;
+}
+.row{
+  margin: 0px !important;
+}
+.col-shadow{
+  box-shadow: 0 0 40px black;
+}
+
 .container-fluid {
   padding-left: 0px !important;
   padding-right: 0px !important;
   background-image: linear-gradient(to bottom, blue , white);
+
 }
 .segundaRonda{
   background-image: linear-gradient(to top, red , white);
@@ -20,10 +40,7 @@ hr{
   margin-bottom: 1px !important;
 }
 
-header a{
-  margin: 10px;
-}
-header h3{
+h3{
   padding-top: 50px;
 }
 .players {
@@ -65,15 +82,6 @@ select{
   height: 40px;
   border: none;
 
-
-}
-.escenario{
-
-
-}
-.rapper1{
-}
-.rapper2{
 }
 
 .escenario select{

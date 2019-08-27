@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/resultados.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143820322-1"></script>
     <script>
@@ -21,10 +21,18 @@
     </script>
 
   </head>
-  <body>
-    <div class="container-fluid resultados">
+  <body class="row">
 
-      <div class="row players fixed-top">
+    <div class="col publicidadIzquierda d-none d-md-block text-center">
+      <p></p>
+    </div> <!-- Publicidad izquierda SOLO TABLET y PC-->
+
+
+    <div class="col container-fluid resultados">
+
+      <div class="resultadosFinales">
+
+      <div class="row players">
         <div class="col">
           <h4 id="player1" class="text-center text-uppercase"></h4>
 
@@ -34,7 +42,6 @@
 
         </div>
       </div>
-
 
       <div class="row">
         <div class="col">
@@ -457,48 +464,63 @@
       </div>
       <!-- fin resultados deluxe-->
 
+
+        <!-- CHART-->
+      <div class="finalNegro">
+
+        <div class="row players">
+          <div class="col">
+            <h4 id="player1Abajo" class="text-center text-uppercase"></h4>
+
+          </div>
+          <div class="col">
+            <h4 id="player2Abajo" class="text-center text-uppercase"></h4>
+
+          </div>
+        </div>
+
+        <div class="row resFinalesFixed">
+          <div class="col">
+              <p id="resFinalP1" class="text-center"></p>
+          </div>
+          <div class="col">
+              <h3 class="text-center text-white-50">Resultado</h3>
+          </div>
+          <div class="col">
+            <p id="resFinalP2" class="text-center"></p>
+          </div>
+        </div>
+
+
+        <div class="">
+          <canvas id="chart1" class=""></canvas>
+
+        </div>
+        <div class="">
+          <canvas id="chart2" class=""></canvas>
+        </div>
+
+
+        <div class="batallometroAnimacion">
+          <h3 class="text-center">Batallómetro</h3>
+          <h6 class="h6-batallometro text-center"></h6>
+          <div class="batallometro ">
+            <div class="progressBar text-right"></div>
+          </div>
+        </div>
+
+        <h1 id="ganador" class="text-center"></h1>
+        <div class="replica" id="replica"></div>
+        <div class="ganador" id="gano"></div>
+      </div><!--fin div finalNegro -->
+
     </div>
 
-    <div class="resultadosFinales">
-      <div class="row fixed-top mt-5">
-        <div class="col">
-            <p id="resFinalP1" class="text-center"></p>
-        </div>
-        <div class="col">
-            <h3 class="text-center text-white-50">Resultado</h3>
-        </div>
-        <div class="col">
-          <p id="resFinalP2" class="text-center"></p>
-        </div>
-      </div>
+  </div> <!-- FIN container-fluid-->
 
-      <!-- CHART-->
-
-      <div class="chart justify-content-center row">
-        <canvas id="chart1" class=""></canvas>
-
-      </div>
-      <div class="row">
-        <canvas id="chart2" class=""></canvas>
-      </div>
-
-
-      <div class="batallometroAnimacion">
-        <h3 class="text-center">Batallómetro</h3>
-        <h6 class="h6-batallometro text-center"></h6>
-        <div class="batallometro ">
-          <div class="progressBar text-right"></div>
-        </div>
-      </div>
-
-      <h1 id="ganador" class="text-center"></h1>
-      <div class="replica" id="replica"></div>
-      <div class="ganador" id="gano">
-
-      </div>
-
-
-    </div>
+  <div class="col publicidadDerecha d-none d-md-block text-center">
+    <p></p>
+  </div><!-- Publicidad derecha SOLO TABLET y PC-->
 
 
       <!-- Bootstrap JS -->
