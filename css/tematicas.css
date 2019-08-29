@@ -21,6 +21,7 @@
 }
 .col-shadow{
   box-shadow: 0 0 40px black;
+  z-index: 100;
 }
 
 .container-fluid {
@@ -70,18 +71,14 @@ h3{
   text-shadow: 0px 0px 12px red, 0 0 18px blue, 0 0 25px black;
 
 }
-
-
-
 select{
   background-color: black;
   color: white;
   font-family: 'play', sans-serif !important;
   text-align-last: center;
-  width: 70px;
+  width: 60px;
   height: 40px;
   border: none;
-
 }
 
 .escenario select{
@@ -97,15 +94,18 @@ select{
   height: auto;
   padding-bottom: 20px;
 }
-
 .final h2{
-  font-size: 20px !important;
+  font-size: 16px !important;
+  max-width: 33%;
 }
 .final select{
-
   margin-left: 25px;
   margin-right: 25px;
+  max-width: 60px;
+  max-height: 40px;
+  margin-bottom: 5px;
 }
+
 .tecnicas, .flow, .escena{
   margin-top: 5px;
   display: flex;
@@ -128,6 +128,13 @@ select{
 }
 
 .segRonda {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.segRonda h5{
+  font-family: 'play', sans-serif !important;
+}
+
+.col-2{
+  padding: 0px !important;
 }

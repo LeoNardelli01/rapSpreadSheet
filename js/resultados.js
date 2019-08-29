@@ -351,26 +351,26 @@ $(function(){
     */
     $("#player1Abajo").html(player1);
     $("#player2Abajo").html(player2);
-    
+
 
     $(".progressBar").width(batallometro + "%");
 
     if (batallometro < 35 ) {
         $(".progressBar").html(batallometro.toFixed(2) + "% ");
     } else  if (batallometro > 35 && batallometro <= 40){
-        $(".progressBar").html(batallometro.toFixed(2) + "% " + " Regular ");
+        $(".progressBar").html(batallometro.toFixed(2) + "% " + " Regular..");
     } else if (batallometro > 40 && batallometro <= 45){
         $(".progressBar").html(batallometro.toFixed(2) + "% " + " Buena! ");
     } else  if (batallometro > 45 && batallometro <= 50){
         $(".progressBar").html(batallometro.toFixed(2) + "% " + " Muy buena! ");
     } else  if (batallometro > 50 && batallometro <= 55){
-        $(".progressBar").html(batallometro.toFixed(2) + "% " + " Excelente ");
+        $(".progressBar").html(batallometro.toFixed(2) + "% " + " Excelente!! ");
     } else  if (batallometro > 55 && batallometro <= 60){
         $(".progressBar").html(batallometro.toFixed(2) + "% " + " Increible!!!");
     } else  if (batallometro > 60 && batallometro <= 70){
             $(".progressBar").html(batallometro.toFixed(2) + "% " + " WOW!!!!");
     } else if (batallometro > 70){
-      $(".progressBar").html(batallometro.toFixed(2) + "% " + " Epica!");
+      $(".progressBar").html(batallometro.toFixed(2) + "% " + " Epica!!!!!");
     }
 
     $(".h6-batallometro").html((parseInt(resFinalesP1) + parseInt(resFinalesP2)) + " Pts totales (nivel de batalla)")
