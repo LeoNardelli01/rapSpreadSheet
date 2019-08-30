@@ -23,6 +23,7 @@
   padding-left: 0px !important;
   padding-right: 0px !important;
   box-shadow: 0 0 40px black;
+  z-index: 100;
 }
 
 hr{
@@ -30,10 +31,7 @@ hr{
   margin-bottom: 1px !important;
 }
 
-header a{
-  margin: 10px;
-}
-header h3{
+h3{
   padding-top: 70px;
 }
 .players {
@@ -70,7 +68,7 @@ select{
   color: white;
   font-family: 'play', sans-serif !important;
   text-align-last: center;
-  width: 70px;
+  width: 60px;
   height: 40px;
   border: none;
 
@@ -103,8 +101,8 @@ select{
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 18px;
+  margin-bottom: 19px;
 }
 .final{
   width: auto;
@@ -114,13 +112,17 @@ select{
 }
 
 .final h2{
-  font-size: 20px !important;
+  font-size: 16px !important;
+  max-width: 33%;
 }
 .final select{
-
   margin-left: 25px;
   margin-right: 25px;
+  max-width: 60px;
+  max-height: 40px;
+  margin-bottom: 5px;
 }
+
 .tecnicas, .flow, .escena{
   margin-top: 5px;
   display: flex;
@@ -140,8 +142,4 @@ select{
   left: 50%;
   transform: translate(-50%);
   font-family: 'Russo One', sans-serif;
-}
-
-#volverMenu a{
-
 }
