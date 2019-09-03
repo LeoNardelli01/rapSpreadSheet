@@ -1,7 +1,7 @@
 $(function(){
   //TYPED JS
   var options = {
-    strings: ["","Comienza...", "<--"],
+    strings: ["","Comienza...", "&larr; &larr; &larr;"],
     typeSpeed: 75,
     showCursor: false,
     smartBackspace: true

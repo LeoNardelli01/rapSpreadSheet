@@ -1,7 +1,7 @@
 $(function(){
   //TYPED JS
   var options = {
-    strings: ["Minuto libre","&#9745; Si es respuesta","Comienza...", "&rarr; &rarr; &rarr;"],
+    strings: ["Minuto libre","&#9745; Si es respuesta...","Comienza...", "&rarr; &rarr; &rarr;"],
     typeSpeed: 75,
     showCursor: false,
     smartBackspace: true
