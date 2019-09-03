@@ -30,6 +30,16 @@
 h3{
   padding-top: 40px;
 }
+p {
+  margin-bottom: 0px !important;
+}
+.typed{
+  position: absolute;
+  z-index: 200;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 
 .players {
   margin: 0px !important;
@@ -51,8 +61,10 @@ h3{
   color: white;
   text-shadow: 0px 0px 15px red;
 }
-
-.titulo {
+.titulo{
+  margin-bottom: 35px;
+}
+.titulo h3{
   font-family: 'Russo One', sans-serif;
   font-size: 50px;
   color: white;
@@ -82,8 +94,6 @@ select{
 .final{
   width: auto;
   margin-top: 40px;
-  padding-bottom: 20px;
-  background-image: linear-gradient(to top, blue , white);
 }
 
 .final h2{
