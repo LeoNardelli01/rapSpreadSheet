@@ -116,7 +116,7 @@ select{
   height: auto;
   margin-top: 20px;
   padding-bottom: 20px;
-  background-image: linear-gradient(to top, blue , white);
+  background-image: linear-gradient(to top, red , white);
 }
 
 .final h2{

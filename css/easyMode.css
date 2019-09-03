@@ -91,6 +91,7 @@ select{
 .final{
   width: auto;
   margin-top: 40px;
+  background-image: linear-gradient(to top, blue , white);
 }
 
 .final h2{

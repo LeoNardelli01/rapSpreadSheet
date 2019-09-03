@@ -99,6 +99,10 @@ select{
   height: auto;
   padding-bottom: 20px;
 }
+.finalA {
+  background-image: linear-gradient(to top, blue , white);
+
+}
 .final h2{
   font-size: 16px !important;
   max-width: 33%;
