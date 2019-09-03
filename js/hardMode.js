@@ -1,4 +1,15 @@
 $(function(){
+  //TYPED JS
+  var options = {
+    strings: ["Palabras cada 5s","Comienza..", "-->"],
+    typeSpeed: 75,
+    showCursor: false,
+    smartBackspace: true
+  }
+  var typed = new Typed(".typed", options);
+  //FIn TYPED
+
+
   let player1 = localStorage.getItem('rap1');
   let player2 = localStorage.getItem('rap2');
 

@@ -1,5 +1,13 @@
 $(function(){
-
+  //TYPED JS
+  var options = {
+    strings: ["Minuto libre","&#9745; Si es respuesta","Comienza...", "&rarr; &rarr; &rarr;"],
+    typeSpeed: 75,
+    showCursor: false,
+    smartBackspace: true
+  }
+  var typed = new Typed(".typed", options);
+  //FIn TYPED
 
   let player1 = localStorage.getItem('rap1');
   let player2 = localStorage.getItem('rap2');

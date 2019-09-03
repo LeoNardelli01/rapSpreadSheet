@@ -27,11 +27,6 @@
 .container-fluid {
   padding-left: 0px !important;
   padding-right: 0px !important;
-  background-image: linear-gradient(to bottom, blue , white);
-
-}
-.segundaRonda{
-  background-image: linear-gradient(to top, red , white);
 
 }
 
@@ -41,9 +36,6 @@ hr{
   margin-bottom: 1px !important;
 }
 
-h3{
-  padding-top: 50px;
-}
 .players {
   padding-top: 15px;
   background-color: black;
@@ -62,15 +54,28 @@ h3{
   color: white;
   text-shadow: 0px 0px 15px red;
 }
+.titulo{
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
 
-
-.titulo {
+.titulo h3{
   font-family: 'Russo One', sans-serif;
   font-size: 50px;
   color: white;
   text-shadow: 0px 0px 12px red, 0 0 18px blue, 0 0 25px black;
-
 }
+p {
+  margin-bottom: 0px !important;
+}
+.typed{
+  position: absolute;
+  z-index: 200;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
 select{
   background-color: black;
   color: white;
@@ -130,6 +135,7 @@ select{
 .segRonda {
   margin-top: 5px;
   margin-bottom: 20px;
+  box-shadow: 0px 0px 15px black;
 }
 .segRonda h5{
   font-family: 'play', sans-serif !important;

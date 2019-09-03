@@ -20,6 +20,7 @@
   margin: 0px !important;
 }
 .container-fluid {
+
   padding-left: 0px !important;
   padding-right: 0px !important;
   box-shadow: 0 0 40px black;
@@ -31,9 +32,6 @@ hr{
   margin-bottom: 1px !important;
 }
 
-h3{
-  padding-top: 70px;
-}
 .players {
   padding-top: 15px;
   background-color: black;
@@ -52,16 +50,26 @@ h3{
   color: white;
   text-shadow: 0px 0px 15px red;
 }
+.titulo{
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
 
-
-.titulo {
+.titulo h3{
   font-family: 'Russo One', sans-serif;
   font-size: 50px;
   color: white;
   text-shadow: 0px 0px 12px red, 0 0 18px blue, 0 0 25px black;
 }
-
-
+p {
+  margin-bottom: 0px !important;
+}
+.typed{
+  position: absolute;
+  z-index: 200;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 select{
   background-color: black;
@@ -89,8 +97,6 @@ select{
 .check{
   padding-right: 0px !important;
   padding-left: 0px !important;
-  padding-top: 15px;
-
 }
 
 .rapper1, .rapper2 {
@@ -103,10 +109,12 @@ select{
   transform: translate(-50%);
   margin-top: 18px;
   margin-bottom: 19px;
+
 }
 .final{
   width: auto;
   height: auto;
+  margin-top: 20px;
   padding-bottom: 20px;
   background-image: linear-gradient(to top, blue , white);
 }

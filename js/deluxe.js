@@ -1,5 +1,13 @@
 $(function(){
-
+  //TYPED JS
+  var options = {
+    strings: ["A Capela 4x4","3 patrones cada uno","Luego libre 4x4","Comienza","&rarr; &rarr; &rarr;"],
+    typeSpeed: 75,
+    showCursor: false,
+    smartBackspace: true
+  }
+  var typed = new Typed(".typed", options);
+  //FIn TYPED
 
   let player1 = localStorage.getItem('rap1');
   let player2 = localStorage.getItem('rap2');
@@ -70,7 +78,7 @@ $(function(){
       var patron11p2 = parseInt($(".patron11p2").val());
 
       totalPatronesP2 = patron1p2 + patron2p2 + patron3p2 + patron4p2 + patron5p2 + patron6p2 + patron7p2 + patron8p2 + patron9p2 + patron10p2 + patron11p2;
-      
+
 
       //----
       tecnicasp2 = parseInt($(".tecnicasp2").val());
