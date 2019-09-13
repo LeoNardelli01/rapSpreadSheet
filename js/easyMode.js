@@ -2,7 +2,7 @@ $(function(){
 
   //TYPED JS
   var options = {
-    strings: ["Palabras cada 10s","Comienza..", "&larr; &larr; &larr;"],
+    strings: ["Palabras cada 10s","Comienza..", "&larr; &larr; &larr;", ""],
     typeSpeed: 75,
     showCursor: false,
     smartBackspace: true

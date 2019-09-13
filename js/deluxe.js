@@ -1,7 +1,7 @@
 $(function(){
   //TYPED JS
   var options = {
-    strings: ["A Capela 4x4..","3 patrones cada uno..","Luego libre 4x4..","Comienza","&rarr; &rarr; &rarr;"],
+    strings: ["A Capela 4x4..","3 patrones cada uno..","Luego libre 4x4..","Comienza","&rarr; &rarr; &rarr;", ""],
     typeSpeed: 75,
     showCursor: false,
     smartBackspace: true

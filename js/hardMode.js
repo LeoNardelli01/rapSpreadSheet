@@ -1,7 +1,7 @@
 $(function(){
   //TYPED JS
   var options = {
-    strings: ["Palabras cada 5s","Comienza..", "&rarr; &rarr; &rarr;"],
+    strings: ["Palabras cada 5s","Comienza..", "&rarr; &rarr; &rarr;", ""],
     typeSpeed: 75,
     showCursor: false,
     smartBackspace: true

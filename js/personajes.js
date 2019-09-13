@@ -1,7 +1,7 @@
 $(function(){
   //TYPED JS
   var options = {
-    strings: ["Modalidad 4x4","&#9745; Si usa el Personaje","Comienza...", "&larr; &larr; &larr;"],
+    strings: ["Modalidad 4x4","&#9745; Si usa el Personaje","Comienza...", "&larr; &larr; &larr;", ""],
     typeSpeed: 75,
     showCursor: false,
     smartBackspace: true
